@@ -1,0 +1,101 @@
+<ion-view title="SendThing" class="content-background-gray">
+    <ion-content>
+        <ion-item>
+            <div class="NE-ExpressEdit-BG border-bottom-image-WFS">
+                <div class="icomoon-NE-ExpressEdit-Sender">寄件人信息</div>
+                <div class="NE-ExpressEdit-EditButton" ng-click="showInfo('changeSendPeopleMessage',1,'')">修改信息</div>
+
+                <div class="NE-ExpressEdit-SenderName">王小波</div><!---寄件人姓名--->
+                <div class="NE-ExpressEdit-SenderPhone">1505764686</div><!---寄件人电话--->
+                <div class="NE-ExpressEdit-SenderAdd">
+                    浙江省宁波市海曙区大梁街48号天之海大厦8楼
+                </div><!---寄件人地址--->
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="NE-ExpressEdit-BG border-image-1px-WFS">
+                <div class="icomoon-NE-ExpressEdit-Recipients">收件人信息</div>
+                <div class="NE-ExpressEdit-EditButton" ng-click="showInfo('changeGetPeopleMessage',1,'')">历史信息</div>
+
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-Recipients-Info">收货地址</div>
+                    <div class="NE-ExpressEdit-Recipients-Add"><a href="#">请编辑收件地址</a></div>
+                    <div class="icomoon-NE-ExpressEdit-Recipients-Arrow">&#xe604;</div>
+                </div>
+                <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-Recipients-Info">收件人</div>
+                    <label><input class="NE-ExpressEdit-Input"  placeholder="请编辑收件人"></label>
+                </div>
+                <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-Recipients-Info">联系电话</div>
+                    <label><input class="NE-ExpressEdit-Input"  placeholder="请编辑联系电话"></label>
+                </div>
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="NE-ExpressEdit-BG border-image-1px-WFS">
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-Recipients-Info">快件重量</div>
+                    <div class="NE-ExpressEdit-Recipients-Add">
+                        <select name="" class="NE-ExpressEdit-Weight">
+                            <option value ="">1 KG</option>
+                            <option value ="">2 KG</option>
+                            <option value ="">3 KG</option>
+                            <option value ="">4 KG</option>
+                            <option value ="">5 KG</option>
+                            <option value ="">6 KG</option>
+                            <option value ="">7 KG</option>
+                            <option value ="">8 KG</option>
+                            <option value ="">9 KG</option>
+                            <option value ="">10 KG</option>
+                            <option value ="">11 KG</option>
+                            <option value ="">12 KG</option>
+                            <option value ="">13 KG</option>
+                            <option value ="">14 KG</option>
+                            <option value ="">15 KG</option>
+                            <option value ="">16 KG</option>
+                            <option value ="">17 KG</option>
+                            <option value ="">18 KG</option>
+                            <option value ="">19 KG</option>
+                            <option value ="">20 KG</option>
+                        </select>
+                    </div>
+                    <div class="icomoon-NE-ExpressEdit-Recipients-Arrow">&#xe604;</div>
+                </div>
+                <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-Recipients-Info">总价</div>
+                    <div class="NE-ExpressEdit-Price">¥ 5</div>
+                </div>
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="NE-ExpressEdit-IntroTitle">选择支付方式</div>
+            <div class="NE-ExpressEdit-BG border-image-1px-WFS">
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-PaymentSupport-Alipay">支付宝支付</div>
+                    <div class="NE-ExpressEdit-Select"><input type="checkbox" id="" /><label for="" class="check-icon"></label></div>
+                </div>
+            </div>
+            <div class="NE-ExpressEdit-Payment">确认支付</div>
+        </ion-item>
+        <!-----------------Script checkbox 定义------------------------>
+        <script>
+            $(document).ready(function () {
+                $("label").click(function () {
+                    if (!$(this).hasClass("checked")) {
+                        $(this).addClass("checked");
+                    } else {
+                        $(this).removeClass("checked");
+                    }
+                });
+            })
+
+        </script>
+    </ion-content>
+</ion-view>

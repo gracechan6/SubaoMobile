@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/text_modify_pwd"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greyDeep"/>
+
+    <EditText
+        style="@style/editText_style"
+        android:hint="@string/enter_old_pwd"
+        android:id="@+id/edtOldPwd"/>
+
+    <View style="@style/underLine_textview"/>
+
+    <EditText
+        style="@style/editText_style"
+        android:background="@null"
+        android:hint="@string/enter_new_pwd"
+        android:id="@+id/edtNewPwd"/>
+
+    <View style="@style/underLine_textview"/>
+
+    <EditText
+        style="@style/editText_style"
+        android:hint="@string/enter_renew_pwd"
+        android:id="@+id/edtConfirmPwd"/>
+
+    <View style="@style/underLine_textview"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#267A82"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/text_confirm"
+        android:textColor="@color/black"/>
+</LinearLayout>

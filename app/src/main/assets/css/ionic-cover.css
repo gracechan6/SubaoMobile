@@ -1,0 +1,15 @@
+/*----------------------------覆盖ionic------------------------------------*/
+.item,.item h1{
+    white-space: normal;
+}
+.content-background-white{
+    background: #fff;
+}
+.content-background-gray{
+    background: #efeff4;
+}
+
+.item.activated{
+    border-color: transparent;
+    background-color: transparent;
+}

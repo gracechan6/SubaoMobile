@@ -1,0 +1,1451 @@
+/*----------------------------首页MainPage(MP)------------------------------------*/
+
+.MP-header{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    height: 175px;
+    z-index: 100;
+    top: 0;
+}
+.MP-headerBG1{
+    background: url("../img/background-iPhone6plus_p1.png") center top no-repeat;
+    background-size:cover;
+    height: 125px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    opacity: 0.955;
+}
+.MP-headerBG2{
+    background: url("../img/background-iPhone6plus_p2.png") top center no-repeat ;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 125px;
+    opacity: 0.955;
+}
+
+.MP-func{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 150px;
+    padding-top: 18px;
+}
+.MP-funcScan{
+    float: left;
+    margin-left: 14%;
+    width: 65px;
+    text-align: center;
+    line-height: 3em;
+    height: 107px;
+}
+.MP-funcPost{
+    float: right;
+    margin-right: 14%;
+    width: 65px;
+    text-align: center;
+    line-height: 3em;
+    height: 107px;
+}
+.MP-funcScan a,.MP-funcPost a{
+    color: #fff;
+    font-size: 1.4em;
+    display: block;
+}
+.MP-funcScan a:before{
+    content: "";
+    width: 65px;
+    height: 65px;
+    background: url("../img/func-scan.png") center no-repeat;
+    background-size: 65px;
+    display:block;
+}
+.MP-funcPost a:before{
+    content: "";
+    width: 65px;
+    height: 65px;
+    background: url("../img/func-NewPost.png") center no-repeat;
+    background-size: 65px;
+    display:block;
+}
+
+.MP-Tap{
+    clear: both;
+    width: 100%;
+    height: 29px;
+    padding-top: 9px;
+}
+.MP-Tap UL{
+    list-style: none;
+    margin: 0 auto;
+    height: 29px;
+    width: 94%;
+    padding: 0;
+    border: 1px solid #665f62;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.MP-Tap li{
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 1.4em;
+}
+.MP-Tap li a{
+    color: #8e91a2;
+}
+.Mp-Tap1{
+    position: absolute;
+    left: 3%;
+    width: 30%;
+    border-right: 1px solid #665f62;
+    border-radius: 4px 0 0 4px;
+}
+.Mp-Tap2{
+    position: absolute;
+    float: left;
+    left: 33%;
+    width: 34.2%;
+    z-index: 8;
+}
+.Mp-Tap3{
+    position: absolute;
+    right: 3%;
+    width: 30%;
+    border-left: 1px solid #665f62;
+    border-radius: 0 4px 4px 0;
+}
+.Mp-Tap-active{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+.MP-Tap-active a{
+    color: #fff !important;
+}
+
+
+.MP-main{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.MP-main-margin{
+    margin-top: 170px;
+}
+.MP-WFS-list{
+    width:96%;
+    overflow: hidden;
+    background: #f5f3eb;
+    margin: 11px auto 0;
+    padding: 10px 12px;
+    border-radius: 3px;
+}
+.MP-WFS-list>a{
+    display: block;
+}
+.MP-WFS-Logo{
+    float: left;
+    background: url("../img/profile70.png") center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.MP-WFS-CorpName{
+    float: left;
+    line-height: 35px;
+    color: #737b84;
+    font-size: 1.4em;
+    margin-left: 4px;
+}
+.MP-WFS-Status{
+    float: right;
+    background: #fa8a02;
+    padding: 0px 4px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.MP-WFS-Airline{
+    clear: both;
+    margin: 0 auto;
+    width:95%;
+    padding-top: 2px;
+    overflow: hidden;
+}
+.MP-WFS-Airline h1{
+    float: left;
+}
+.MP-WFS-Airline h2{
+    float: right;
+}
+.MP-WFS-Airline h1,.MP-WFS-Airline h2{
+    font-size: 2em;
+    font-weight: normal;
+    color: #50575f;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    width: 82px;
+    text-align: center;
+}
+
+.MP-WFS-Airline span{
+    border-bottom: 1px dashed #d0d0d4;
+    width: 42%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 17px;
+}
+.icomoon-truck {
+    position: relative;
+    top: 0;
+    font-size: 25px;
+    color: #b7b8be;
+    padding: 4px;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.MP-WFS-Divider{
+    width: 100%;
+    float: right;
+    clear: both;
+    position: relative;
+    right: -12px;
+    margin: 6px auto 6px;
+}
+
+.icomoon-MP-WFS-Recipient,.icomoon-MP-WFS-Add{
+    clear: both;
+    float: left;
+    font-size: 1.4em;
+    color: #97999b;
+    margin-left: 5px;
+    line-height:1.4em;
+    width: 16%;
+}
+.icomoon-MP-WFS-Recipient:before{
+    content: "\e613";
+    font-size: 8px;
+    color: #21b1fc;
+    margin-right: 4px;
+}
+.MP-WFS-RecipientName{
+    float: left;
+    margin-left: 5px;
+    line-height: 1.4em;
+    font-size: 1.4em;
+    color: #128ccb;
+}
+
+.icomoon-MP-WFS-Add:before{
+    content: "\e60c";
+    font-size: 8px;
+    color: #9170f6;
+    margin-right: 4px;
+}
+.MP-WFS-AddInfo{
+    float: left;
+    margin-left: 5px;
+    margin-top: 1px;
+    line-height: 1.3em;
+    font-size: 1.4em;
+    color: #474747;
+    width: 77%;
+    white-space: normal;
+}
+.icomoon-MP-WFR-Tip{
+    clear: both;
+    float: left;
+    font-size: 1.2em;
+    color: #fff;
+    margin-left: 5px;
+    line-height:1.4em;
+    opacity: 0.7;
+}
+.icomoon-MP-WFR-Tip:before{
+    content: "\e609";
+    font-size: 8px;
+    color: #fff;
+    margin-right: 6px;
+}
+
+
+.MP-StopGap{
+    width: 100%;
+    height: 50px;
+}
+/*----------------------------等待寄件详情(MP-WFSInfo)------------------------------------*/
+.MP-WFSInfo{
+    width: 100%;
+    height: 100%;
+}
+
+.MP-WFSInfo-list{
+    width:96%;
+    overflow: scroll;
+    background: #f5f3eb;
+    margin: 0 auto ;
+    padding: 10px 12px 14px;
+    border-radius: 4px;
+    height: 98%;
+}
+
+
+.MP-WFSInfo-Logo{
+    float: left;
+    background: url("../img/profile70.png") center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.MP-WFSInfo-CorpName{
+    float: left;
+    line-height: 35px;
+    color: #737b84;
+    font-size: 1.4em;
+    margin-left: 4px;
+}
+.MP-WFSInfo-Status{
+    float: right;
+    background: #fa8a02;
+    padding:0px 4px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.MP-WFSInfo-Airline{
+    clear: both;
+    margin: 0 auto;
+    width:95%;
+    padding-top: 2px;
+    overflow: hidden;
+}
+.MP-WFSInfo-Airline h1{
+    float: left;
+}
+.MP-WFSInfo-Airline h2{
+    float: right;
+}
+.MP-WFSInfo-Airline h1,.MP-WFSInfo-Airline h2{
+    font-size: 2em;
+    font-weight: normal;
+    color: #50575f;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    width: 82px;
+    text-align: center;
+}
+
+.MP-WFSInfo-Airline span{
+    border-bottom: 1px dashed #d0d0d4;
+    width: 42%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 17px;
+}
+.icomoon-truck {
+    position: relative;
+    top: 0;
+    font-size: 25px;
+    color: #b7b8be;
+    padding: 4px;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.icomoon-MP-WFSInfo-Recipient,.icomoon-MP-WFSInfo-Add,.icomoon-MP-WFSInfo-Phone{
+    clear: both;
+    float: left;
+    font-size: 1.5em;
+    color: #97999b;
+    margin-left: 5px;
+    line-height:1.6em;
+    width: 18%;
+}
+.icomoon-MP-WFSInfo-Recipient:before{
+    content: "\e613";
+    font-size: 8px;
+    color: #21b1fc;
+    margin-right: 4px;
+}
+.MP-WFSInfo-RecipientName{
+    float: left;
+    margin-left: 3px;
+    line-height: 1.6em;
+    font-size: 1.4em;
+    color: #128ccb;
+}
+
+.icomoon-MP-WFSInfo-Add:before{
+    content: "\e60c";
+    font-size: 8px;
+    color: #9170f6;
+    margin-right: 4px;
+}
+.MP-WFSInfo-AddInfo{
+    float: left;
+    margin-left: 3px;
+    margin-top: 3px;
+    line-height: 1.4em;
+    font-size: 1.5em;
+    color: #474747;
+    width: 77%;
+}
+.icomoon-MP-WFSInfo-Phone:before{
+    content: "\e60b";
+    font-size: 8px;
+    color: #5ccfda;
+    margin-right: 4px;
+}
+.MP-WFSInfo-PhoneInfo{
+    float: left;
+    margin-left: 3px;
+    margin-top: 1px;
+    line-height: 1.6em;
+    font-size: 1.5em;
+    color: #128ccb;
+    width: 77%;
+}
+
+.MP-WFSInfo-QRcode{
+    clear: both;
+    width: 168px;
+    height: 168px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 18px auto;
+}
+.MP-WFSInfo-QRcode-Content{
+    width: 150px;
+    height: 150px;
+    margin: 9px auto;
+}
+.MP-WFSInfo-QRcode span{
+    width: 150px;
+    height: 150px;
+    margin: 9px auto;
+    display: block;
+}
+.MP-WFSInfo-QRcode img{
+    width: 150px;
+    height: 150px;
+    border: none;
+}
+.MP-WFSInfo-divider1{
+    width: 100%;
+    border-bottom: 1px dashed #d6d6d4;
+}
+
+.icomoon-MP-WFSInfo-Tiptitle{
+    font-size: 1.4em;
+    color: #272727;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+.icomoon-MP-WFSInfo-Tiptitle:before{
+    content: "\e607";
+    font-size: 8px;
+    color: #ff4901;
+    margin-right: 4px;
+    line-height: 1.4em;
+    margin-left: 5px;
+}
+.MP-WFSInfo-TipInfo{
+    margin-left: 3%;
+    width: 60%;
+    float: left;
+    text-align: left;
+    color: #727171;
+    font-size: 1.3em;
+    line-height: 1.6em;
+
+}
+.MP-WFSInfo-TipPic{
+    width: 37%;
+    min-height: 100px;
+    float: right;
+}
+
+/*----------------------------等待取件列表(MP-WFR)------------------------------------*/
+.MP-WFR{
+    width: 100%;
+    height: 100%;
+}
+
+.MP-WFR-list{
+    width: 96%;
+    overflow: hidden;
+    background: url("../img/WaitingForReceiveBG-iPhone6plus.png") center top no-repeat;
+    background-size:621px ;
+    margin:11px auto 0 ;
+    padding: 12px 12px 8px
+}
+
+
+.MP-WFR-Logo{
+    float: left;
+    background: url("../img/profile70-green.png") center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.MP-WFR-CorpName{
+    float: left;
+    color: #737b84;
+    margin-left: 7px;
+}
+.MP-WFR-CorpName h1{
+    font-size: 1.4em;
+    margin: 2px 0 3px 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #fff;
+}
+.MP-WFR-CorpName h2{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.2em;
+    opacity:0.8;
+
+}
+.MP-WFR-Status{
+    float: right;
+    background: #258a69;
+    padding: 0px 4px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.MP-WFR-Airline{
+    clear: both;
+    margin: 0 auto;
+    width:95%;
+    padding-top: 2px;
+    overflow: hidden;
+}
+.MP-WFR-Airline h1{
+    float: left;
+}
+.MP-WFR-Airline h2{
+    float: right;
+}
+.MP-WFR-Airline h1,.MP-WFR-Airline h2{
+    font-size: 2em;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    width: 82px;
+    text-align: center;
+}
+
+.MP-WFR-Airline span{
+    border-bottom: 1px dashed #309a75;
+    width: 42%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 17px;
+}
+.icomoon-WFR-truck {
+    position: relative;
+    top: 0;
+    font-size: 25px;
+    color: #278765;
+    padding: 4px;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.icomoon-MP-WFR-Recipient,.icomoon-MP-WFR-Add,.icomoon-MP-WFR-Phone{
+    clear: both;
+    float: left;
+    font-size: 1.5em;
+    color: #c1fce1;
+    margin-left: 5px;
+    line-height:1.6em;
+    width: 18%;
+}
+.icomoon-MP-WFR-Recipient:before{
+    content: "\e613";
+    font-size: 8px;
+    color: #c9fc5e;
+    margin-right: 4px;
+}
+.MP-WFR-RecipientName{
+    float: left;
+    margin-left: 3px;
+    line-height: 1.6em;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+/*----------------------------等待取件详情(MP-WFRInfo)------------------------------------*/
+.MP-WFRInfo{
+    width: 100%;
+    height: 100%;
+}
+
+.MP-WFRInfo-list{
+    width: 96%;
+    overflow: hidden;
+    background: url("../img/WaitingForReceiveBG-iPhone6plus.png") center top no-repeat;
+    background-size:621px ;
+    margin: 0 auto ;
+    padding: 10px 12px 14px;
+}
+
+
+.MP-WFRInfo-Logo{
+    float: left;
+    background: url("../img/profile70-green.png") center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.MP-WFRInfo-CorpName{
+    float: left;
+    color: #737b84;
+    margin-left: 7px;
+}
+.MP-WFRInfo-CorpName h1{
+    font-size: 1.4em;
+    margin: 2px 0 3px 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #fff;
+}
+.MP-WFRInfo-CorpName h2{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.2em;
+    opacity:0.8;
+
+}
+.MP-WFRInfo-Status{
+    float: right;
+    background: #258a69;
+    padding: 0px 4px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.MP-WFRInfo-Airline{
+    clear: both;
+    margin: 0 auto;
+    width:95%;
+    padding-top: 2px;
+    overflow: hidden;
+}
+.MP-WFRInfo-Airline h1{
+    float: left;
+}
+.MP-WFRInfo-Airline h2{
+    float: right;
+}
+.MP-WFRInfo-Airline h1,.MP-WFRInfo-Airline h2{
+    font-size: 2em;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    width: 82px;
+    text-align: center;
+}
+
+.MP-WFRInfo-Airline span{
+    border-bottom: 1px dashed #309a75;
+    width: 42%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 19px;
+}
+.icomoon-WFRInfo-truck {
+    position: relative;
+    top: 4px;
+    font-size: 25px;
+    color: #278765;
+    padding: 4px;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.icomoon-MP-WFRInfo-Recipient,.icomoon-MP-WFRInfo-Add,.icomoon-MP-WFRInfo-Phone{
+    clear: both;
+    float: left;
+    font-size: 1.5em;
+    color: #c1fce1;
+    margin-left: 5px;
+    line-height:1.6em;
+    width: 18%;
+}
+.icomoon-MP-WFRInfo-Recipient:before{
+    content: "\e613";
+    font-size: 8px;
+    color: #c9fc5e;
+    margin-right: 4px;
+}
+.MP-WFRInfo-RecipientName{
+    float: left;
+    margin-left: 3px;
+    line-height: 1.6em;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.icomoon-MP-WFRInfo-Add:before{
+    content: "\e60c";
+    font-size: 8px;
+    color: #ff9bbe;
+    margin-right: 4px;
+}
+.MP-WFRInfo-AddInfo{
+    float: left;
+    margin-left: 3px;
+    margin-top: 3px;
+    line-height: 1.4em;
+    font-size: 1.5em;
+    color: #fff;
+    width: 77%;
+    opacity: 0.8;
+}
+.icomoon-MP-WFRInfo-Phone:before{
+    content: "\e60b";
+    font-size: 8px;
+    color: #6addfe;
+    margin-right: 4px;
+}
+.MP-WFRInfo-PhoneInfo{
+    float: left;
+    margin-left: 3px;
+    margin-top: 1px;
+    line-height: 1.6em;
+    font-size: 1.5em;
+    color: #fff;
+    width: 77%;
+}
+
+.MP-WFRInfo-QRcode{
+    clear: both;
+    width: 168px;
+    height: 168px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 18px auto;
+}
+.MP-WFRInfo-QRcode span{
+    width: 150px;
+    height: 150px;
+    margin: 9px auto;
+    display: block;
+}
+.MP-WFRInfo-QRcode img{
+    width: 150px;
+    height: 150px;
+    border: none;
+}
+.MP-WFRInfo-divider1{
+    width: 100%;
+    border-bottom: 1px dashed #fff;
+    opacity: 0.2;
+}
+
+.icomoon-MP-WFRInfo-Tiptitle1,.icomoon-MP-WFRInfo-Tiptitle2{
+    font-size: 1.4em;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+.icomoon-MP-WFRInfo-Tiptitle2:before{
+    content: "\e607";
+    font-size: 8px;
+    color: #b5ffe9;
+    margin-right: 4px;
+    line-height: 1.4em;
+    margin-left: 5px;
+}
+.icomoon-MP-WFRInfo-Tiptitle1:before{
+    content: "\e60a";
+    font-size: 8px;
+    color: #b5ffe9;
+    margin-right: 4px;
+    line-height: 1.4em;
+    margin-left: 5px;
+}
+.MP-WFRInfo-TipInfo{
+    margin-left: 3%;
+    width: 60%;
+    float: left;
+    text-align: left;
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    opacity: 0.8;
+    padding-bottom: 14px;
+
+}
+.MP-WFRInfo-TipPic{
+    width: 37%;
+    min-height: 100px;
+    float: right;
+}
+
+/*----------------------------配送中列表(Delivery)------------------------------------*/
+
+.MP-Delivery-list{
+    width: 96%;
+    overflow: hidden;
+    background: url("../img/DeliveryBG1-iPhone6plus.png") center bottom no-repeat;
+    background-size: 621px;
+    margin: 11px auto 0;
+    padding: 10px 12px 11px;
+    height: 95%;
+}
+
+.MP-Delivery-Logo{
+    float: left;
+    background: url("../img/profile70-yellow.png") center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.MP-Delivery-CorpName{
+    float: left;
+    margin-left: 7px;
+}
+.MP-Delivery-CorpName h1{
+    font-size: 1.4em;
+    margin: 2px 0 3px 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #6c4c10;
+}
+.MP-Delivery-CorpName h2{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #6c4c10;
+    font-size: 1.2em;
+    opacity:0.8;
+
+}
+.MP-Delivery-Status{
+    float: right;
+    background: #fa8a02;
+    padding: 0px 4px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.MP-Delivery-Airline{
+    clear: both;
+    margin: 0 auto;
+    width:95%;
+    padding-top: 2px;
+    overflow: hidden;
+}
+.MP-Delivery-Airline h1{
+    float: left;
+}
+.MP-Delivery-Airline h2{
+    float: right;
+}
+.MP-Delivery-Airline h1,.MP-Delivery-Airline h2{
+    font-size: 2em;
+    font-weight: normal;
+    color: #5b4314;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+    width: 82px;
+    text-align: center;
+}
+
+.MP-Delivery-Airline span{
+    border-bottom: 1px dashed #a08b5f;
+    width: 42%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 17px;
+}
+.icomoon-truck-Delivery {
+    position: relative;
+    top: 0;
+    font-size: 25px;
+    color: #dd9625;
+    padding: 4px;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icomoon-MP-Delivery-Progress{
+    clear: both;
+    float: left;
+    font-size: 1.2em;
+    color: #a17523;
+    margin-left: 5px;
+    line-height:1.4em;
+    width: 24%;
+}
+.icomoon-MP-Delivery-Progress:before{
+    content: "\e605";
+    font-size: 8px;
+    color: #be6bad;
+    margin-right: 4px;
+}
+.MP-Delivery-Progress{
+    float: left;
+    margin-left: 5px;
+    margin-top: 1px;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    color: #3d382e;
+    width: 60%;
+    white-space: normal;
+}
+.icomoon-MP-Delivery-Delete{
+    font-size: 16px;
+    float: right;
+    width: 7%;
+    color: #c68036;
+    margin-right: 0;
+    text-align: right;
+}
+
+
+/*----------------------------已签收列表(DeliveryCheck)------------------------------------*/
+
+.MP-DeliveryCheck-list{
+    width: 96%;
+    overflow: hidden;
+    background: url("../img/DeliveryBG2-iPhone6plus.png") center bottom no-repeat;
+    background-size: 621px;
+    margin: 11px auto 0;
+    padding: 10px 12px 11px;
+    height: 95%;
+}
+.MP-DeliveryCheck1-seal{
+    position: relative;
+}
+.MP-DeliveryCheck1-seal p{
+    background: url("../img/seal.png") center no-repeat;
+    background-size: 91px;
+    width: 91px;
+    height: 91px;
+    position: absolute;
+    top: -15px;
+    z-index:1 ;
+    right: -30px;
+}
+
+.MP-DeliveryCheck-Logo{
+    float: left;
+    background: url("../img/profile70-blue.png") center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.MP-DeliveryCheck-CorpName{
+    float: left;
+    margin-left: 7px;
+}
+.MP-DeliveryCheck-CorpName h1{
+    font-size: 1.4em;
+    margin: 2px 0 3px 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #fff;
+}
+.MP-DeliveryCheck-CorpName h2{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.2em;
+    opacity:0.8;
+
+}
+.MP-DeliveryCheck-Status{
+    float: right;
+    background: #1279a0;
+    padding: 0px 4px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.MP-DeliveryCheck-Airline{
+    clear: both;
+    margin: 0 auto;
+    width:95%;
+    padding-top: 2px;
+    overflow: hidden;
+}
+.MP-DeliveryCheck-Airline h1{
+    float: left;
+}
+.MP-DeliveryCheck-Airline h2{
+    float: right;
+}
+.MP-DeliveryCheck-Airline h1,.MP-DeliveryCheck-Airline h2{
+    font-size: 2em;
+    font-weight: normal;
+    color: #fff;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+    width: 82px;
+    text-align: center;
+}
+
+.MP-DeliveryCheck-Airline span{
+    border-bottom: 1px dashed #2387ae;
+    width: 42%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 17px;
+}
+.icomoon-truck-DeliveryCheck {
+    position: relative;
+    top: 0;
+    font-size: 25px;
+    color: #2185ab;
+    padding: 4px;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icomoon-MP-DeliveryCheck-Progress{
+    clear: both;
+    float: left;
+    font-size: 1.2em;
+    color: #fff;
+    margin-left: 5px;
+    line-height:1.4em;
+    width: 20%;
+    opacity: 0.7;
+}
+.icomoon-MP-DeliveryCheck-Progress:before{
+    content: "\e606";
+    font-size: 8px;
+    color: #fff;
+    margin-right: 4px;
+    opacity: 0.7;
+}
+.MP-DeliveryCheck-Progress{
+    float: left;
+    margin-left: 3px;
+    margin-top: 1px;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    color: #fff;
+    width: 60%;
+}
+.icomoon-MP-DeliveryCheck-Delete{
+    font-size: 16px;
+    float: right;
+    width: 7%;
+    color: #11607e;
+    margin-right: 0;
+    text-align: right;
+}
+
+/*----------------------------配送中详情(DeliveryInfo)------------------------------------*/
+.MP-DeliveryInfo{
+    width: 100%;
+    height: 96%;
+}
+
+.MP-DeliveryInfo-list{
+    width: 96%;
+    overflow: scroll;
+    background: #ffc43b;
+    margin: 0 auto ;
+    padding: 10px 12px 14px;
+    height:100%;
+}
+.MP-DeliveryInfo-BottomPage{
+    width:96%;
+    background: url("../img/DeliveryBG1-iPhone6plus.png") bottom center no-repeat;
+    background-size: 621px;
+    height: 6px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.MP-DeliveryInfo-Logo{
+    float: left;
+    background: url("../img/profile70-yellow.png") center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.MP-DeliveryInfo-CorpName{
+    float: left;
+    color: #737b84;
+    margin-left: 7px;
+}
+.MP-DeliveryInfo-CorpName h1{
+    font-size: 1.4em;
+    margin: 2px 0 3px 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #6c4c10;
+}
+.MP-DeliveryInfo-CorpName h2{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #6c4c10;
+    font-size: 1.2em;
+    opacity:0.8;
+
+}
+.MP-DeliveryInfo-Status{
+    float: right;
+    background: #fa8a02;
+    padding: 0px 4px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.MP-DeliveryInfo-Airline{
+    clear: both;
+    margin: 0 auto;
+    width:95%;
+    padding-top: 2px;
+    overflow: hidden;
+}
+.MP-DeliveryInfo-Airline h1{
+    float: left;
+}
+.MP-DeliveryInfo-Airline h2{
+    float: right;
+}
+.MP-DeliveryInfo-Airline h1,.MP-DeliveryInfo-Airline h2{
+    font-size: 2em;
+    font-weight: normal;
+    color: #5b4314;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    width: 82px;
+    text-align: center;
+}
+
+.MP-DeliveryInfo-Airline span{
+    border-bottom: 1px dashed #a08b5f;
+    width: 42%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 17px;
+}
+.icomoon-truck-DeliveryInfo {
+    position: relative;
+    top: 2px;
+    font-size: 25px;
+    color: #dd9625;
+    padding: 4px;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.MP-DeliveryInfo-ProgressTitle{
+    font-size: 1.4em;
+    color: #5b4314;
+    margin-bottom: 17px;
+}
+.MP-DeliveryInfo-Progress{
+    width: 90%;
+    border-left: 1px solid #ffe29d;
+    padding-bottom: 30px;
+    margin-left: 5%;
+}
+.MP-DeliveryInfo-Progress h1{
+    font-size: 1.4em;
+    color: #3d382e;
+    font-weight: lighter;
+    line-height: 1.6em;
+    margin: 0 0 0 5%;
+}
+.MP-DeliveryInfo-Progress span{
+    font-size: 1.4em;
+    color: #3d382e;
+    opacity: 0.5;
+    font-weight: lighter;
+    margin-left:5% ;
+}
+.MP-DeliveryInfo-Progress-before:before{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    left: -4px;
+    top: 8px;
+    float: left;
+}
+.MP-DeliveryInfo-ProgressLatest-before:before{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #fa8a02;
+    border-radius: 10px;
+    position: relative;
+    left: -4px;
+    top: 8px;
+    float: left;
+    border: 1px solid #fff;
+}
+/*----------------------------签收详情(DeliveryCheckInfo)------------------------------------*/
+.MP-DeliveryCheckInfo{
+    width: 100%;
+    height: 96%;
+}
+
+.MP-DeliveryCheckInfo-list{
+    width: 96%;
+    overflow: scroll;
+    background: #2b9eca;
+    margin: 0 auto ;
+    padding: 10px 12px 14px;
+    height: 100%;
+}
+.MP-DeliveryCheckInfo-BottomPage{
+    width: 96%;
+    background: url("../img/DeliveryBG2-iPhone6plus.png") bottom center no-repeat;
+    background-size: 621px;
+    height: 6px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.MP-DeliveryCheckInfo-Logo{
+    float: left;
+    background: url("../img/profile70-blue.png") center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.MP-DeliveryCheckInfo-CorpName{
+    float: left;
+    color: #fff;
+    margin-left: 7px;
+}
+.MP-DeliveryCheckInfo-CorpName h1{
+    font-size: 1.4em;
+    margin: 2px 0 3px 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #fff;
+}
+.MP-DeliveryCheckInfo-CorpName h2{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.2em;
+    opacity:0.8;
+
+}
+.MP-DeliveryCheckInfo-Status{
+    float: right;
+    background: #1279a0;
+    padding: 0px 4px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.MP-DeliveryCheckInfo-Airline{
+    clear: both;
+    margin: 0 auto;
+    width:95%;
+    padding-top: 2px;
+    overflow: hidden;
+}
+.MP-DeliveryCheckInfo-Airline h1{
+    float: left;
+}
+.MP-DeliveryCheckInfo-Airline h2{
+    float: right;
+}
+.MP-DeliveryCheckInfo-Airline h1,.MP-DeliveryCheckInfo-Airline h2{
+    font-size: 2em;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    width: 82px;
+    text-align: center;
+}
+
+.MP-DeliveryCheckInfo-Airline span{
+    border-bottom: 1px dashed #2387ae;
+    width: 42%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 19px;
+}
+.icomoon-truck-DeliveryCheckInfo {
+    position: relative;
+    top: 3px;
+    font-size: 25px;
+    color: #2185ab;
+    padding: 4px;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.MP-DeliveryCheckInfo-ProgressTitle{
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 17px;
+}
+.MP-DeliveryCheckInfo-Progress{
+    width: 90%;
+    border-left: 1px solid #95cfe5;
+    padding-bottom: 30px;
+    margin-left: 5%;
+}
+.MP-DeliveryCheckInfo-Progress h1{
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: lighter;
+    line-height: 1.6em;
+    margin: 0 0 0 5%;
+}
+.MP-DeliveryCheckInfo-Progress p{
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: lighter;
+    line-height: 1.6em;
+    margin: 0 0 0 5%;
+}
+.MP-DeliveryCheckInfo-Progress span{
+    font-size: 1.4em;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: lighter;
+    margin-left:5% ;
+}
+.MP-DeliveryCheckInfo-Progress-before:before{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    left: -4px;
+    top: 8px;
+    float: left;
+}
+.MP-DeliveryCheckInfo-ProgressLatest-before:before{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #2185ab;
+    border-radius: 10px;
+    position: relative;
+    left: -4px;
+    top: 8px;
+    float: left;
+    border: 1px solid #fff;
+}
+
+.MP-DeliveryChecl-seal{
+    position: relative;
+}
+.MP-DeliveryChecl-seal p{
+    background: url("../img/seal.png") center no-repeat;
+    background-size: 91px;
+    width: 91px;
+    height: 91px;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    right: 10px;
+}
+
+
+
+/*-------------------------没有数据提示--------------------------------------*/
+.MP-NoData{
+    margin: 20% auto 0;
+    width: 60%;
+}
+.MP-NoData p{
+    font-size: 1.6em;
+    color: rgba(255, 255, 255, 0.502);
+    text-align: center;
+}
+.MP-NoData p:before{
+    content: "";
+    background: url("../img/bircle.png") center no-repeat;
+    background-size: 140px;
+    display: block;
+    height: 111px;
+    margin-bottom: 18px;
+}

@@ -1,0 +1,87 @@
+<resources>
+    <string name="title_login">登录</string>
+    <string name="title_forget_pwd">忘记密码</string>
+    <string name="title_enter_new_pwd">输入新密码</string>
+    <string name="title_regist">注册</string>
+    <string name="title_reg_val">验证</string>
+    <string name="title_app_name">速宝快递</string>
+    <string name="title_message">消息</string>
+    <string name="title_setting">设置</string>
+    <string name="title_edit_info">编辑资料</string>
+    <string name="app_name_zh">速宝快递</string>
+
+    <!--登陆界面-->
+    <string name="enter_tel">请输入手机号</string>
+    <string name="enter_pwd">请输入密码</string>
+    <string name="empty_tel">用户名不能为空</string>
+    <string name="empty_pwd">密码不能为空</string>
+    <string name="text_server_out">服务器连接失败</string>
+
+    <!--注册页面及验证页面-->
+    <string name="text_val">验证码</string>
+    <string name="enter_val">输入验证码</string>
+    <string name="empty_val">验证码不能为空</string>
+    <string name="success_regist">注册成功请登录</string>
+    <string name="error_val">注册成功请登录</string>
+
+
+    <!--设置界面-->
+    <string name="text_about">关于甬宝</string>
+    <string name="text_protocol">用户协议</string>
+    <string name="text_opinion">意见反馈</string>
+    <string name="text_modify_pwd">修改密码</string>
+    <string name="enter_old_pwd">请输入原密码</string>
+    <string name="enter_new_pwd">请输入新密码</string>
+    <string name="enter_renew_pwd">确认新密码</string>
+    <string name="text_confirm">确&#160;&#160;认</string>
+    <string name="empty_old_pwd">原密码不能为空!</string>
+    <string name="error_old_pwd">原密码错误</string>
+    <string name="empty_new_pwd">新密码不能为空!</string>
+    <string name="empty_confirm_pwd">请输入确认密码!</string>
+    <string name="differ_pwd">新密码两次输入不一致!</string>
+    <string name="modify_pwd_success">修改密码成功!</string>
+    <string name="text_take_photo">拍照</string>
+    <string name="text_from_gallery">从相册中选取</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_wrong_val">验证码不正确!</string>
+    <string name="text_fail_download">图片下载失败!</string>
+    <string name="text_success_download">图片下载成功!</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确认</string>
+    <string name="refuse_sdcard">当前SD卡不可用</string>
+    <string name="text_success_headLoad">上传图片成功</string>
+
+    <!--找回密码-->
+    <string name="text_find_Pwd">找回密码</string>
+    <string name="error_none_Tel">手机号不存在</string>
+    <string name="enter_val_pl">请输入验证码</string>
+    <string name="text_val_send">验证码已经发送到</string>
+    <string name="enter_confirm_pwd_pl">再次确认密码</string>
+    <string name="empty_confirm_pwd_2">确认密码不能为空</string>
+    <string name="differ_pwd_2">两次输入密码不一致</string>
+
+    <!--编辑资料-->
+    <string name="text_nickname">昵称</string>
+    <string name="text_yongbaoid">甬宝号</string>
+    <string name="text_tel">手机号</string>
+    <string name="text_qrcode">我的二维码</string>
+    <string name="text_logout">注销登录</string>
+
+
+
+
+
+    <string name="app_name">SubaoMobile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_register_validate">RegisterValidateActivity</string>
+    <string name="title_activity_msg">MsgActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_forget_pwd">ForgetPwdActivity</string>
+    <string name="title_activity_set_new_pwd">SetNewPwdActivity</string>
+    <string name="title_activity_enter_new_pwd">EnterNewPwdActivity</string>
+    <string name="title_activity_edit_info">EditInfoActivity</string>
+    <string name="title_activity_crop">CropActivity</string>
+</resources>

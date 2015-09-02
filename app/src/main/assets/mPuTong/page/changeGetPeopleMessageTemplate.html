@@ -1,0 +1,16 @@
+<ion-content delegate-handle="ListScroll">
+    <ion-refresher pulling-text="下拉刷新..." refreshing-icon="ion-loading-c" on-refresh="doRefresh()"></ion-refresher>
+    <div class="NE-ExpressEdit-RCAdd-BG border-bottom-image-WFS">
+        <ion-list>
+            <ion-item ng-repeat="obj in jsonData['Receiver'] track by $index">
+                <div class="NE-ExpressEdit-RCAdd-Li" ng-click="selHistory(obj)">
+                    <div class="NE-ExpressEdit-RCAdd-Name" ng-bind="decodeURI(obj.receiverName)"></div>
+                    <div class="NE-ExpressEdit-RCAdd-Number" ng-bind="obj.receiverMobile"></div>
+                    <div class="NE-ExpressEdit-RCAdd-Add" ng-bind="decodeURI(obj.receiverAddress)"></div>
+                </div>
+                <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+            </ion-item>
+        </ion-list>
+    </div>
+    <ion-infinite-scroll ng-if="moreDataCanBeLoaded" icon="ion-loading-c" on-infinite="loadMore(false)" distance="1%"></ion-infinite-scroll>
+</ion-content>

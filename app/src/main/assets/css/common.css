@@ -1,0 +1,73 @@
+
+a{
+    text-decoration:none;
+    tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+
+
+h1,h2,h3,h4,p{
+    margin:0;
+    padding:0}
+
+.border-image-1px-WFS {
+    border-width: 1px 0;
+    border-image: url("../img/border.png") 2 0 stretch;
+}
+.border-bottom-image-WFR {
+    border-width: 0 0 1px 0;
+    border-image: url("../img/border-WFR.png") 2 0 stretch;
+}
+
+.border-bottom-image-WFS {
+    border-width: 0 0 1px 0;
+    border-image: url("../img/border.png") 2 0 stretch;
+}
+.border-bottom-image-Delivery {
+    border-width: 0 0 1px 0;
+    border-image: url("../img/border-Delivery.png") 2 0 stretch;
+}
+.border-bottom-image-DeliveryCheck {
+    border-width: 0 0 1px 0;
+    border-image: url("../img/border-Deliverycheck.png") 2 0 stretch;
+}
+
+
+.border-bottom-image2 {
+    border-width: 0 0 1px 0;
+    border-image: url("../img/border.png") 2 0 stretch;
+}
+
+.border-top-image {
+    border-width: 1px 0 0 0;
+    border-image: url("../img/border.png") 2 0 stretch;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-srdd79');
+    src:url('../fonts/icomoon.eot?#iefix-srdd79') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?-srdd79') format('truetype'),
+    url('../fonts/icomoon.woff?-srdd79') format('woff'),
+    url('../fonts/icomoon.svg?-srdd79#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icomoon-"], [class*="icomoon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.floatclear{
+    clear: both;
+}
+

@@ -1,0 +1,8 @@
+<label>
+    <div class="form_main" ng-class="{'border-bottom-image': !isLast,'arrow_bg': itemBind.isEdit}">
+        <h1 ng-bind="name"></h1>
+        <!--<h2 ng-show="itemBind.isEdit"><select class="select_style_blue" ng-model="itemBind.valueRel" ng-options="item.UUID as item.NAME for item in itemBind.selList" onfocus="objHide('footButton');" onblur="objShow('footButton');"></select></h2>-->
+        <h2 ng-show="itemBind.isEdit"><select class="select_style_blue" ng-model="itemBind.valueRel" ng-options="item.UUID as item.NAME for item in itemBind.selList"></select></h2>
+        <h5 ng-hide="itemBind.isEdit"><span ng-bind="itemBind.content" class="font-color1"></span></h5>
+    </div>
+</label>

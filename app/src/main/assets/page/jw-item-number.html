@@ -1,0 +1,10 @@
+<label>
+    <div class="form_main" ng-class="{'border-bottom-image': !isLast}">
+        <h1 ng-bind="name"></h1>
+        <h5>
+            <!--<input type="number" class="input-fild" placeholder="{{placeholder}}" ng-model="itemBind.valueRel" ng-show="itemBind.isEdit" onfocus="objHide('footButton');" onblur="objShow('footButton');">-->
+            <input type="number" class="input-fild" placeholder="{{placeholder}}" ng-model="itemBind.valueRel" ng-show="itemBind.isEdit">
+            <span ng-bind="itemBind.valueRel" ng-hide="itemBind.isEdit" class="font-color1"></span>
+        </h5>
+    </div>
+</label>

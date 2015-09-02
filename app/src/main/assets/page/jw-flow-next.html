@@ -1,0 +1,35 @@
+<ion-view title="nextPage">
+    <ion-content>
+        <div class="form_list1 border-bottom-image">
+            <label>
+                <div class="form_main border-bottom-image arrow_bg">
+                    <h1>后续环节</h1>
+                    <h3>
+                        <select class="select_style_blue" ng-model="selInfo.nextTacheSelected" ng-options="obj.NEXT_TACHE_ID as obj.NEXT_TACHE_NAME for obj in nextTache" ng-change="clearSel()"></select>
+                    </h3>
+                </div>
+            </label>
+            <label>
+                <div class="form_main ">
+                    <h1>待办通知</h1>
+                    <h2><input type="checkbox" class="input1" ng-model="isMustSend"><div ng-class="{lable_icon:!isMustSend,checked:isMustSend}">短消息</div></h2>
+                </div>
+            </label>
+        </div>
+        <div class="form_title"><h1>后续环节处理人</h1></div>
+        <div class="form_list1 border-image-1px">
+            <label ng-click="strSel()">
+                <div class="form_main">
+                    <h1>人员选择</h1>
+                    <pre ng-bind="selInfo.selUser"></pre>
+                </div>
+            </label>
+        </div>
+    </ion-content>
+    <div class="handle-button">
+        <button class="handle-back" ng-click="closeNextPopover()">取消</button>
+        <div class="handle-forward" ng-click="gotoNext()">
+            <h2>确定</h2>
+        </div>
+    </div>
+</ion-view>

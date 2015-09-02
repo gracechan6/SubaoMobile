@@ -1,0 +1,43 @@
+<ion-view title="ideaPage">
+    <tab-slide-box tab="0">
+        <div class="tsb-icons border-bottom-image">
+            <div class="tsb-ic-wrp">
+                <ion-scroll direction="x" class="tsb-hscroll add1">
+                    <a href="javascript:;">常用意见</a>
+                    <a href="javascript:;">个人意见</a>
+                </ion-scroll>
+            </div>
+        </div>
+        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+            <ion-slide>
+                <ion-content>
+                    <div class="border-bottom-image contacts_list_out">
+                        <ion-list>
+                            <ion-item ng-repeat="obj in ideaListInfo track by $index" style="display: {{obj.IS_PERSONAL_PHRASE?'none':'block'}}" ng-click="sleIdea(obj)">
+                                <div class="Notice_list{{$last?'':' border-bottom-image'}}">
+                                    <h5 ng-bind="obj.PHRASE_BODY"></h5>
+                                </div>
+                            </ion-item>
+                        </ion-list>
+                    </div>
+                </ion-content>
+            </ion-slide>
+            <ion-slide>
+                <ion-content>
+                    <div class="border-bottom-image contacts_list_out">
+                        <ion-list>
+                            <ion-item ng-repeat="obj in ideaListInfo track by $index" style="display: {{obj.IS_PERSONAL_PHRASE?'block':'none'}}" ng-click="sleIdea(obj)">
+                                <div class="Notice_list{{$last?'':' border-bottom-image'}}">
+                                    <h5 ng-bind="obj.PHRASE_BODY"></h5>
+                                </div>
+                            </ion-item>
+                        </ion-list>
+                    </div>
+                </ion-content>
+            </ion-slide>
+        </ion-slide-box>
+    </tab-slide-box>
+    <div class="handle-button">
+        <button class="handle-back" ng-click="closeIdeaPopover()">取消</button>
+    </div>
+</ion-view>

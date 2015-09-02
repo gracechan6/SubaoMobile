@@ -1,0 +1,1414 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background: #f0f0f6 !important;
+}
+
+a {
+    text-decoration: none;
+    tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+img {max-width: 100%;}
+
+.list{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.border-image-1px {
+    border-width: 1px 0;
+    border-image: url(../../img/border.png) 2 0 stretch;
+}
+
+.border-bottom-image {
+    border-width: 0 0 1px 0;
+    border-image: url(../../img/border.png) 2 0 stretch;
+}
+
+.border-bottom-image2 {
+    border-width: 0 0 1px 0;
+    border-image: url(../../img/border2.png) 2 0 stretch;
+}
+
+.border-top-image {
+    border-width: 1px 0 0 0;
+    border-image: url(../../img/border.png) 2 0 stretch;
+}
+
+.border-left-image-red {
+    border-width: 0 0 0 1px;
+    border-image: url(../../img/border_red.png) 0 0 0 2 stretch;
+}
+.border-right-image{
+    border-width: 0 1px 0 0;
+    border-image:url(../../img/border4.png)0  2  0  0  stretch;
+}
+
+
+.switch_bar3 {
+    width: 100%;
+    height: 35px;
+    background: #FFFFFF;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+.switch_bar3_table{
+    width: 78%;
+    height: 35px;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+.switch_bar3 td{
+    color: #3d4245;
+    vertical-align: middle;
+}
+.switch_selected {
+    color: #00aaff !important;
+    background: url(../../img/blue-bg.png) bottom center repeat-x;
+    background-size: 100% 2px;
+}
+.input_write.switch_tab_active {
+    color: #00aaff !important;
+    background: url(../../img/blue-bg.png) bottom center repeat-x;
+    background-size: 100% 2px;
+}
+
+.contacts_list_margin1 {
+    margin-top: 34px;
+}
+
+.contacts_list_margin2 {
+    margin-top: 18px;
+}
+.contacts_list_margin3 {
+    margin-top: 34px;
+}
+.contacts_list_margin4 {
+    margin-top: 18px !important;
+}
+.contacts_list_margin5{
+    margin-top: 30px;
+}
+
+.pane {
+    background: #f0f0f6 !important;
+}
+
+.contacts_list_out {
+    /*padding: 0 0 0 5%;*/
+    background: #fff;
+}
+.contacts_list_out1{
+    background: #FFFFFF;
+}
+.contacts_list {
+    width: 100%;
+    padding-left: 5%;
+    height: 55px;
+}
+
+.list_portrait {
+    background: url(../../img/profile70.png) center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    float: left;
+    border-radius: 5px;
+}
+
+.contacts_list h2 {
+    float: left;
+    margin: 0 16px;
+    line-height: 55px;
+    font-size: 1.5em;
+    color: #3f444b;
+    font-weight: normal;
+}
+
+.contacts_list span{
+    width: 13px;
+    height: 55px;
+    float: right;
+    background: url(../../img/arrow_4.png) center no-repeat;
+    background-size: 13px;
+    margin-right: 10px;
+}
+
+.contacts_list h4 {
+    float: left;
+    line-height: 55px;
+    font-size: 1.7em !important;
+    color: #3f444b;
+    font-weight: normal;
+    width: 90%;
+}
+.Notice_list{
+    width: 100%;
+    padding:10px 0;
+    padding-left: 5%;
+}
+.Notice_list h5{
+    font-size: 1.7em;
+    color: #3f444b;
+    font-weight: normal;
+    white-space: normal !important;
+    width: 90%;
+    line-height: 1.4em;
+}
+
+.Notice_list h6{
+     font-size: 1.7em;
+     color: #00aaff;
+     font-weight: normal;
+     white-space: normal !important;
+     width: 90%;
+     line-height: 1.4em;
+ }
+.notice_list_font{
+    color:#00aaff !important; ;
+}
+.notice_list pre{
+    padding: 10px 0 10px 5%;
+    font-size: 1.2em;
+    color:#3d4245;
+}
+
+/*-------------------------通知公告详情-------------------------------*/
+.notice_article{
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.notice_article_title{
+    margin: 0;
+    padding: 0;
+}
+.notice_article_title h1{
+    font-size: 1.8em;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.notice_subtitle{
+    width: 100%;
+    margin: 0;
+    padding: 0 ;
+    text-align: center;
+    overflow: hidden;
+    font-weight: lighter;
+}
+.notice_subtitle_info{
+    margin: 0 auto 10px;
+    font-size: 1em;
+    color: #6c6c6c;
+}
+.notice_article_main{
+    width: 100%;
+    overflow: hidden;
+}
+.notice_article_main pre{
+    width: 100%;
+    padding: 15px 5%;
+    color: #2a2a2a;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    min-height: 180px;
+    text-align: left;
+}
+
+
+/*-------------------------通讯录详情-------------------------------*/
+
+.portrait_list{
+    background: #FFFFFF;
+    width: 100%;
+    padding: 0 0 ;
+    overflow: hidden;
+}
+
+
+.portrait_margin2{
+    margin-top: 12px;
+}
+
+.portrait_main{
+    line-height: 48px;
+    height: 48px;
+    background: #fff;
+    width: 95%;
+    margin-left: 5%;
+}
+.FontSize1{
+    font-size: 1.4em;
+}
+
+.portrait_list h1,.portrait_list h2,.portrait_list h3{
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 48px;
+}
+.portrait_list span{
+    float: right;
+    padding: 0;
+    margin: 0 5% 0 0;
+    height: 48px;
+}
+.portrait_list span img{
+    width: 20px;
+    height: 20px;
+    margin-top: 13px;
+
+}
+.portrait_list h1{
+    color: #00aaff;
+}
+.portrait_list   a{
+    color: #3d4245;
+}
+.portrait_list h2{
+    margin-left: 14px;
+    color: #3d4245;
+}
+.portrait_list h3{
+    margin-left: 14px;
+    color: #3d4245;
+    width: 80%;
+}
+.portrait_textarea{
+    width: 100%;
+    line-height: 1.6em;
+    font-size: 1em;
+    color: #9d9fa0;
+    margin: 8px 0;
+}
+
+/*-------------------------公文列表-------------------------------*/
+.list_date1,.list_date2{
+    color: #919193;
+    font-family: arial;
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 1.3em;
+}
+.list_date1{
+    margin-top: 40px;
+}
+.list_date2{
+    margin-top: 7px;
+}
+
+.contacts_list1 {
+    width: 100%;
+    padding-left: 5%;
+    clear: both;
+}
+.contacts_list2{
+    width: 100%;
+    padding-left: 5%;
+    clear: both;
+}
+
+.contacts_list2 span{
+    width: 13px;
+    float: right;
+    background: url(../../img/arrow_4.png) center no-repeat;
+    background-size: 13px;
+    margin-right: 10px;
+    height: 55px;
+}
+
+.contacts_list2 h4 {
+    float: left;
+    font-size: 1.7em;
+    color:#3f444b !important;
+    font-weight: normal;
+}
+
+.list_source{
+    margin:10px 0;
+    padding: 0;
+    font-size:1.4em;
+    font-family: helvetica;
+    font-weight: normal;
+    color: #1790cd;
+    float: left;
+    background: url(../../img/list-icon1.png) left center no-repeat;
+    background-size:12px;
+    text-indent: 16px;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list_time{
+    float: right;
+    margin: 10px 16px 0 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.4em;
+    color: #5c6b70;
+    background: url(../../img/list-icon2.png) left center no-repeat;
+    background-size:12px ;
+    text-indent: 16px;
+}
+.list_title{
+    clear: both;
+    font-size: 1.5em;
+    color: #1d1d1d;
+    line-height: 1.7em;
+    margin-bottom: 10px;
+    margin-right: 3%;
+    white-space: normal !important;
+}
+
+/*-------------------------收文详情-------------------------------*/
+.form_title{
+    margin:8px 0 8px 5%;
+    color: #919193;
+    font-family: helvetica;
+    overflow: hidden;
+}
+.form_title h1,.form_title h2{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    color: #969696;
+    float: left;
+
+}
+.form_title h1{
+    max-width: 64%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.form_title h2{
+    width: 100%;
+}
+.form_title span{
+    color: #333333;
+    margin-left: 5px;
+}
+.form_title h3{
+    float: right;
+    padding: 0 12px 0;
+    margin: auto 2% 0 ;
+    font-size: 1.4em;
+    color: #333333;
+    font-weight: normal;
+    background: url(../../img/arrow_3.png) right center no-repeat;
+    background-size:13px ;
+
+}
+.form_list{
+    margin-top:8px;
+    background: #FFFFFF;
+    width: 100%;
+    padding: 0 0 ;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.form_list1{
+    background: #FFFFFF;
+    width: 100%;
+    padding: 0 0 ;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.form_main{
+    clear: both;
+    min-height: 48px;
+    margin-left: 6%;
+    overflow: hidden;
+}
+
+
+.form_main h1,.form_main h2,.form_main h3,.list h4{
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 48px;
+}
+
+.form_main span img{
+    width: 20px;
+    height: 20px;
+    margin-top: 13px;
+
+}
+.form_main h1{
+    color: #8a8989;
+    position:absolute;
+}
+.form_main   a{
+    color: #3d4245;
+}
+.form_main h2{
+    margin-left: 30%;
+    color: #3d4245;
+    width: 70% !important;
+    white-space: normal !important;
+}
+.form_main h3{
+    margin-left: 30%;
+    color: #00aaff;
+    width: 70%;
+}
+.form_main h4{
+    margin-left: 5%;
+    color: #00aaff;
+    width:94% ;
+}
+.form_main h5{
+    padding: 0;
+    float: left;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 48px;
+    margin: 0 0 0 30%;
+    color: #1790cd;
+    width: 70% !important;
+    white-space: normal !important;
+
+}
+.font-color1{
+    color: #333333 !important;
+}
+.form_main pre{
+    margin:13px 0 10px 30%;
+    color: #3d4245;
+    width: 70%;
+    float: left;
+    line-height: 1.6em;
+    font-size: 1.2em;
+}
+
+.input-fild{
+    width: 96%;
+    font-size: 1em !important;
+    padding: 0 !important;
+    line-height: 48px !important;
+    height: 48px !important;
+    color:#3d4245 ;
+    border: none;
+}
+
+.textarea_filed{
+    width: 96%;
+    font-size: 1em;
+    padding: 10px ;
+    line-height: 1.4em;
+    color: #3d4245;
+    overflow-y: visible;
+    height: 45px;
+}
+.textarea_comment{
+    width: 100%;
+    font-size: .6em;
+    padding: 10px ;
+    line-height: 1.4em;
+    color: #3d4245;
+    overflow-y: visible;
+    height: 45px;
+}
+
+.select_style,.select_style_blue{
+    width: 96%;
+    padding: 0;
+    font-size: 1em;
+    line-height: 24px;
+    border: none;
+    background: none;
+}
+.select_style{
+    color:#3d4245 ;
+}
+.select_style_blue{
+    color: #1790cd;
+}
+
+.arrow_bg{
+    background:url(../../img/arrow_4.png) 96% center no-repeat;
+    background-size:13px ;
+}
+.input_phrase,.input_write{
+    font-size: 1.6em;
+    color: #1790cd;
+    float: left;
+    width: 49%;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+}
+.input_phrase{
+    background:url(../../img/icon_phrase.png) 20%center no-repeat;
+    background-size:13px ;
+}
+.input_write{
+    background: url(../../img/icon_write.png) 20% center no-repeat;
+    background-size:13px ;
+}
+.list_bottom{
+    width: 100%;
+    height: 40px;
+}
+.h4_left{
+    margin-left: 5%;
+    height: 48px;
+}
+.h4_left input{
+    width: 95%;
+}
+
+/*------------------------按钮-------------------------*/
+
+
+.handle-button{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+    background: #00aaff;
+    clear: both
+}
+.handle-button1{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 35px;
+    background: #00aaff;
+    clear: both
+}
+.handle-button_sure{
+    height: 45px;
+    background: #00aaff;
+    text-align: center;
+    width: 100%;
+}
+.handle-button_sure span{
+    color: #ffffff;
+    font-size: 2em;
+    line-height: 48px;
+    padding: 0;
+    margin: 0 auto;
+}
+.handle-back{
+    width: 30%;
+    height: 45px;
+    float: left;
+    background: #0086d1;
+    color: #fff;
+    text-align: center;
+    line-height:45px;
+    border: none;
+    font-size: 1.8em;
+}
+
+.handle-forward{
+    width: 70%;
+    background: #00aaff;
+    height: 45px;
+    float: right;
+    font-size: 1em;
+    color: #fff;
+}
+.handle-forward h1{
+    float: left;
+    color: #FFFFFF;
+    padding: 0 10px;
+    line-height: 45px;
+    font-size: 1.6em;
+
+}
+.handle-forward h2{
+    float: right;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    padding: 0 15px;
+    line-height: 45px;
+}
+.handle-forward h2:after,.bottom_button2:after{
+    content:"";
+    padding:0 3px;
+    height: 26px;
+    margin-left:5px;
+    background: url(../../img/arrow_1.png) center no-repeat;
+    background-size: 6.5px 12.5px;
+}
+
+.bottom_button_icon{
+    float: left;
+    background: #0086d1;
+    height: 45px;
+}
+.bottom_button_icon1,.bottom_button_icon2,.bottom_button_icon3,.bottom_button_icon4{
+    height: 45px;
+    float: left;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    width: 74px;
+    line-height: 68px;
+}
+
+/*退回按钮*/
+.bottom_button_icon1{
+    background: url("../../img/button_icon1.png") center 24% no-repeat;
+    background-size: 16px;
+}
+
+/*保存按钮*/
+.bottom_button_icon2{
+    background: url("../../img/button_icon2.png") center 24% no-repeat;
+    background-size: 16px;
+}
+/*催办按钮*/
+.bottom_button_icon3{
+    background: url("../../img/button_icon3.png") center 24% no-repeat;
+    background-size: 16px;
+}
+/*收回按钮*/
+.bottom_button_icon4{
+    background: url("../../img/button_icon4.png") center 24% no-repeat;
+    background-size: 16px;
+}
+
+.bottom_button2{
+    float: right;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    padding: 0 15px;
+    line-height: 45px;
+}
+/*------------------------checkbox-------------------------*/
+
+.lable_icon {
+    /*width: 90%;*/
+    background:url(../../img/icon_checkbox1.png) left center no-repeat   ;
+    background-size:17px;
+    display:inline-block;
+    padding-left:25px;
+}
+.lable_icon_title{
+    font-size: .6em;
+    margin-left: 8%;
+}
+.lable_icon span{
+    font-size: 1.6em;
+    line-height: 22px;
+}
+
+.input1 {
+    position: absolute;
+    left: -30px;
+    visibility:hidden;
+}
+.checked {
+    background:url(../../img/icon_checkbox2.png) left center no-repeat   ;
+    background-size:17px;
+    padding-left: 25px;
+}
+.form_member{
+    margin: 10px 0 10px 30%;
+    color: #3d4245;
+    width: 70%;
+    line-height: 30px;
+    padding: 0;
+    float: left;
+    font-weight: normal;
+    font-size: 1.6em;
+    white-space: normal !important;
+}
+/*------------------------收文-人员选择-------------------------*/
+.member_list_out{
+
+}
+.member_list_out > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.float_clear{
+    clear: both;
+}
+.form_member_list1 {
+    font-weight: normal;
+    background: #FFFFFF;
+}
+.form_member_list2{
+    height: 45px;
+    font-size: 1.6em;
+    line-height: 45px;
+    margin: 0 0 0 8%;
+}
+.form_member_list1 > h1{
+    margin: 0 0 0 8%;
+    padding: 0;
+    font-size: 1.6em;
+    line-height: 45px;
+    float: left;
+    max-width: 57%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.form_member_list1 > span{
+    margin-left: 10px;
+    font-size:1.3em;
+    color: #fff;
+    margin-top: 14px;
+    float: left;
+    background: #ff9a14;
+    border-radius: 12px;
+    padding: 0 6px;
+}
+.form_member_list1 > h2{
+    float: right;
+    background: url(../../img/arrow_5.png) center no-repeat;
+    background-size:13px;
+    width: 13px;
+    height: 45px;
+    margin-right: 15px;
+}
+.form_member_list1 > h3{
+    float: right;
+    background: url(../../img/arrow_4.png) 80% center no-repeat;
+    background-size:13px;
+    width: 20%;
+    height: 45px;
+    margin-right: 2px;
+}
+.form_member_list1_arrow1{
+    float: right;
+    background: url(../../img/arrow_4.png) 80% center no-repeat;
+    background-size:13px;
+    width: 20%;
+    height: 45px;
+    margin-right: 2px;
+}
+.form_member_list1_arrow2{
+/*切换收起箭头*/
+    float: right;
+    background: url(../../img/arrow_5.png) 80% center no-repeat;
+    background-size:13px;
+    width: 20%;
+    height: 45px;
+    margin-right: 2px;
+}
+/*切换下拉箭头*/
+.member_list {
+    list-style: none;
+    overflow: hidden;
+    background: #f8f8f8;
+    margin: 0 ;
+    clear: both;
+    padding: 0;
+
+}
+.member_list > li{
+    line-height: 48px;
+    margin:0;
+    padding-left: 8%;
+    height: 48px;
+    background: url(../../img/border_bg1.png)left repeat-y;
+    background-size:2px;
+
+}
+.member_list h1{
+    margin-left: 10px;
+    font-size: 1.6em;
+    padding: 0 0 0 10px;
+    height: 48px;
+    line-height: 48px;
+}
+/*------------------------收文-历史审批-------------------------*/
+
+.form_history{
+    clear: both;
+    margin-left: 6%;
+    padding-bottom: 10px;
+}
+.form_history  h1{
+    margin:10px 0;
+    padding: 0;
+    font-size:1.4em;
+    font-family: helvetica;
+    font-weight: normal;
+    color: #1790cd;
+    float: left;
+}
+.form_history h2{
+    float: right;
+    margin: 10px 16px 0 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.2em;
+    color: #adadad;
+    background: url(../../img/list-icon2.png) left center no-repeat;
+    background-size:12px ;
+    text-indent: 18px;
+    font-family: helvetica;
+}
+.form_history_info{
+    clear: both;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    background: url(../../img/icon_phrase2.png) left center no-repeat;
+    background-size:13px;
+    padding-left: 22px;
+    white-space: normal !important;
+}
+
+
+/*-------------------------日程安排------------------------------*/
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*reset end*/
+
+.calender_select {
+    width: 100%;
+    height: 33px;
+    background: #263f54;
+    padding: 0 2% 0 5%;
+    position: fixed;
+    top: 0;
+}
+
+.calender_select h1 {
+    float: left;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: lighter;
+    line-height: 30px;
+
+}
+
+.calender_select h1 span {
+    font-size: 1.6em;
+    font-weight: lighter;
+    font-family: helvetica;
+    margin: 0 2px 0 0;
+    padding: 0;
+}
+
+.calender_select h2 {
+    float: right;
+    font-size: 1.4em;
+    padding-right: 15px;
+}
+
+#ym {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    background: url(../../img/arrow_6.png) right center no-repeat;
+    background-size: 13px;
+    height: 33px !important;
+    float: right;
+}
+
+#ym select {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: no-repeat;
+    border: none;
+    color: #fff;
+    height: 34px;
+    line-height: 34px;
+}
+
+.year {
+    font-size: 1.4em;
+    background: none;
+    color: #fff !important;
+    height: 34px;
+}
+
+.ym_line {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.calender_main {
+    padding-top: 34px;
+    width: 100%;
+    background: #fff;
+}
+
+#days {
+    clear: both;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#days td, th {
+    padding: 8px 0 4px 0;
+    text-align: center;
+
+}
+
+#days th {
+    color: #278BBD;
+    font-size: 1.2em !important;
+}
+
+#days span {
+    font-size: 1.5em;
+    font-family: helvetica;
+    padding: 4px;
+}
+
+.noThisMonth {
+    color: #a8a8a8;
+}
+
+.theDay {
+    border: 1px #00aaff solid;
+    border-radius: 30px;
+    color: #00aaff;
+}
+
+.mark_Transparent, .mark_blue, .mark_white {
+    width: 6px;
+    height: 6px;
+    z-index: 111;
+    border-radius: 50%;
+    margin: 5px auto 0;
+}
+
+.mark_blue {
+    background: #9d9fa0;
+}
+
+.mark_white {
+    background: #fff;
+}
+
+.selected {
+    border-radius: 20px;
+    background: #1b7cad;
+    color: #ffffff;
+}
+
+.schedule {
+    width: 100%;
+    margin: 0px auto 0;
+    padding: 15px 0 0 9%;
+    background: #fff;
+}
+
+.schedule_title {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.schedule_title h1 {
+    font-size: 1.5em;
+    color: #9e9e9e;
+    float: left;
+    font-weight: lighter;
+}
+
+.schedule_title h2 {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url(../../img/schedule_icon.png) center no-repeat;
+    background-size: 16px;
+    margin: 0 0 0 4px;
+}
+
+.schedule_list {
+    clear: both;
+    list-style: none;
+}
+
+.schedule_list > li {
+    margin: 10px 0;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.schedule_list h1 {
+    float: left;
+    font-size: 1.6em;
+    color: #00aaff;
+    font-family: arial;
+    font-weight: lighter;
+    line-height: 20px;
+}
+
+.schedule_list h2 {
+    float: left;
+    font-size: 1.4em;
+    line-height: 20px;
+    padding: 0;
+    margin: 0 0 0 12px;
+    width: 80%;
+    color: #515151;
+}
+.schedule_subtitle{
+    clear: both;
+    margin-top: 6px;
+}
+.schedule_subtitle li{
+    font-size: 1em;
+    color: #65808e;
+    line-height: 24px;
+}
+
+.no_date {
+    font-size: 1.5em;
+    color: #a6a6a6;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+
+/*-------------------------日程安排------------------------------*/
+
+.attachment_list{
+    padding: 10px 0;
+    overflow: hidden;
+    line-height: 26px;
+}
+.attachment{
+    margin: 0 0 0 10px;
+    padding: 0;
+    float: left;
+    border-radius: 6px;
+    font-size: 1.4em;
+    color: #585858;
+    font-weight: normal;
+    font-family: helvetica;
+}
+.attachment_icon{
+    float: left;
+    width: 23px;
+    height: 26px;
+    text-indent: -9999px;
+}
+
+.attachment_icon_img{
+    background: url(../../img/icon_attachment_image.png) center no-repeat;
+    background-size:23px ;
+}
+.attachment_icon_ppt{
+    background: url(../../img/icon_attachment_ppt.png) center no-repeat;
+    background-size:23px ;
+}
+.attachment_icon_doc{
+    background: url(../../img/icon_attachment_doc.png) center no-repeat;
+    background-size:23px ;
+}
+.attachment_icon_excel{
+    background: url(../../img/icon_attachment_excel.png) center no-repeat;
+    background-size:23px ;
+}
+.attachment_icon_pdf{
+    background: url(../../img/icon_attachment_pdf.png) center no-repeat;
+    background-size:23px ;
+}
+.attachment_icon_word{
+    background: url(../../img/icon_attachment_word.png) center no-repeat;
+    background-size:23px ;
+}
+
+
+
+.tree li {
+    cursor: pointer;
+    padding-left: 1.3em;
+}
+
+.tree ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.intermediate {
+    opacity: 0.3;
+}
+
+.hasSubBar {
+    top: 50px;
+}
+
+.hasBar {
+    margin-top: 50px;
+}
+
+.tabs-top > .tabs, .tabs.tabs-top {
+    top: 0px;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/*.....覆盖ionic.css.......Start*/
+.has-tabs-top {
+    top: 13px; }
+
+.tabs-striped .tabs {
+    box-shadow: none ;
+    border: 1px;
+    border-width: 0 0 1px 0;
+    border-image: url(../../img/border2.png) 2 0 stretch;
+    margin-top: -2px;
+}
+.tabs-striped.tabs-positive .tab-item{
+    color: #3d4245;
+    font-size: 1.6em;
+}
+.tab-item-active{
+    color: #00abff !important;
+    border-color: #00abff !important;
+}
+.tabs{
+    height: 35px;
+    line-height: 32px;
+}
+/*.....覆盖ionic.css.......End */
+
+
+/*.....tab 1...... */
+.tab1{
+    color: #fff;
+}
+.item-complex .item-content{
+    padding: 0;
+}
+/*----------------------popup----------------------------*/
+.popup{
+    width: 70%;
+    background: #fff;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.popup_content{
+    width: 80%;
+    margin: 0 auto;
+}
+.popup h1{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: lighter;
+    color: #616265;
+    padding:16px 0;
+    margin: 0;
+}
+.popup_button{
+    width: 100%;
+}
+.popup_buttonSure{
+    float: left;
+    width: 49%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.6em;
+    color: #00aaff;
+}
+.popup_buttonCancel{
+    float: right;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.6em;
+    color: #00aaff;
+}
+
+.popup_buttonLarge{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.6em;
+    color: #00aaff;
+}
+
+.NoMore_notice{
+    width: 100%;
+    height: 60px;
+    margin: 10px auto 20px;
+}
+.NoMore_notice h1{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.4em;
+    font-weight: normal;
+    color: #5c6b70;
+    text-align: center;
+}
+.NoMore_notice2{
+    width: 100%;
+    margin: 120px auto 0;
+}
+.NoMore_notice2 h1{
+    background:url(../../img/notice_icon1.png) center no-repeat ;
+    background-size: 63px 59px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+.NoMore_notice2 h1:after{
+    content: "当前没有更多文件了";
+    white-space: pre;
+    font-size:.7em;
+    color: #b4b4b9;
+    font-weight: lighter;
+    position: relative;
+    top: 60px;
+}
+
+
+
+
+/*----------------------附件列表----------------------------*/
+.attachment-main{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+.attachmentList_list{
+    width: 95%;
+    margin: 0 0 0 5%;
+    height: 47px;
+}
+.attachmentList_icon{
+    width: 23px;
+    height: 47px;
+    float: left;
+}
+.attachmentList_title{
+    float: left;
+    line-height: 47px;
+    color: #585858;
+    margin-left: 10px;
+    font-size: 1.6em;
+}
+.rc-TimeBar{
+    width: 100%;
+    height: 41px;
+    background: #fff;
+}
+.rc-Time{
+    width: 60%;
+    height: 41px;
+    margin: 0 auto;
+}
+.rc-Time:before{
+    content: "";
+    width: 23px;
+    height: 41px;
+    background: url("../../img/schedule_time.png") center no-repeat;
+    background-size: 23px;
+    display: block;
+    float: left;
+    margin-right: -23px;
+    position: relative;
+    right: 40px;
+}
+.re-Time-begin{
+    line-height: 41px;
+    font-size: 1.8em;
+    color: #3d4245;
+    float: left;
+}
+.re-Time-end{
+    line-height: 41px;
+    font-size: 1.8em;
+    color: #3d4245;
+    float: right;
+}
+.re-Time-line{
+    margin: auto;
+    height: 20px;
+    width: 16%;
+    position: relative;
+}
+.rc-Date,.rc-Note{
+    margin-top: 10px;
+    margin-left: 5%;
+    font-size: 1.4em;
+    color: #8a8989;
+    margin-bottom: 4px;
+}
+.rc-Note:before{
+    content: "";
+    background: url("../../img/schedule_icon2.png") center no-repeat;
+    background-size: 13px;
+    display: block;
+    width: 13px;
+    height: 15px;
+    float: left;
+    margin-right: 6px;
+}
+.rc-main{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+.rc-main-list{
+    margin-left: 5%;
+    width: 95%;
+    clear: both;
+    overflow: hidden;
+}
+.rc-main-time{
+    float: left;
+    color: #00aaff;
+    font-size: 1.8em;
+    line-height: 47px;
+    margin-right: 10px;
+}
+.rc-main-name{
+    float: left;
+    margin: 0 10px;
+    line-height: 47px;
+    color: #3d4245;
+    font-size: 1.8em;
+}
+.rc-note-info{
+    width: 95%;
+    padding: 10px 0 10px 5%;
+    font-size: 1.8em;
+    line-height: 30px;
+}

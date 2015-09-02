@@ -1,0 +1,43 @@
+<ion-view title="DQKJInfo">
+    <ion-content>
+        <ion-item >
+            <div class="MP-WFRInfo">
+                <div class="MP-WFRInfo-list">
+                    <div class="MP-WFRInfo-Logo"></div>
+                    <div class="MP-WFRInfo-CorpName">
+                        <h1 ng-bind="info.companyName"></h1>
+                        <h2>256 365 576 685</h2>
+                    </div>
+                    <div class="MP-WFRInfo-Status">等待取件</div>
+                    <div class="MP-WFRInfo-Airline">
+                        <h1 ng-bind="info.sendBeginPlace"></h1>
+                        <h2 ng-bind="info.receiverTargetplace">></h2>
+                        <span></span>
+                        <div class="icomoon-WFRInfo-truck">&#xe614;</div>
+                    </div>
+                    <div class="MP-WFS-Divider border-bottom-image-WFR"></div>
+                    <div class="icomoon-MP-WFRInfo-Recipient">发件</div><!--发件人-->
+                    <div class="MP-WFRInfo-RecipientName" ng-bind="info.sendUser"></div>
+                    <div class="icomoon-MP-WFRInfo-Phone">电话</div><!--电话-->
+                    <div class="MP-WFRInfo-PhoneInfo" ng-bind="info.sendMobile"></div>
+                    <div class="icomoon-MP-WFRInfo-Add">地址</div><!--发件地址-->
+                    <div class="MP-WFRInfo-AddInfo" ng-bind="info.sendAddress"></div>
+                    <div class="floatclear"></div>
+                    <div class="MP-WFRInfo-QRcode">
+                        <div id="qrcode" onload="Zoom(this, 150,150)" class="MP-WFSInfo-QRcode-Content"></div>
+                    </div>
+                    <div class="MP-WFRInfo-divider1"></div>
+                    <div class="icomoon-MP-WFRInfo-Tiptitle1">取件地址</div><!--如何寄件-->
+                    <div class="MP-WFRInfo-TipInfo">
+                        =====大梁街48号天之海大厦1楼（大厅内）=====
+                    </div>
+                    <div class="MP-WFRInfo-TipPic"></div>
+                    <div class="icomoon-MP-WFRInfo-Tiptitle2">如何取件</div><!--如何寄件-->
+                    <div class="MP-WFRInfo-TipInfo">
+                        在甬宝终端扫描二维码，在开启的柜子中取件
+                    </div>
+                </div>
+            </div>
+        </ion-item>
+    </ion-content>
+</ion-view>

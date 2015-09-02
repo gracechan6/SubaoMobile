@@ -1,0 +1,33 @@
+<ion-view title="ExpressList">
+    <div class="MP-header">
+        <div class="MP-headerBG1"></div><!--第一层背景色透明-->
+        <div class="MP-headerBG2"></div><!--第二层背景色透明-->
+        <div class="MP-func">
+            <div class="MP-funcScan" ng-click="jumpTo('Search')"><a>快件查询</a></div>
+            <!--<div class="MP-funcScan" ng-click="jumpGoTo('Login')"><a>快件查询</a></div>-->
+            <div class="MP-funcPost" ng-click="jumpTo('CompanyList')"><a>我要寄件</a></div>
+        </div>
+    </div>
+    <tab-slide-box tab="0">
+        <div class="tsb-icons">
+            <div class="tsb-ic-wrp">
+                <ion-scroll direction="x" class="tsb-hscroll add1">
+                    <a href="javascript:;" class="Mp-TapSlide1">待寄快件</a>
+                    <a href="javascript:;" class="Mp-TapSlide2">待取快件</a>
+                    <a href="javascript:;" class="Mp-TapSlide3">快件跟踪</a>
+                </ion-scroll>
+            </div>
+        </div>
+        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+            <ion-slide>
+                <jw-list jw-template="page/ExpressListTemplateDjkj.html" jw-path="ybpt/web/ybmobile/ReceiverSender_detailShow.action" jw-field="djkj" jw-key='{"Muuid":"{{Constant.mUuid}}","Type":"0"}'></jw-list>
+            </ion-slide>
+            <ion-slide>
+                <jw-list jw-template="page/ExpressListTemplateDqkj.html" jw-path="ybpt/web/ybmobile/ReceiverSender_detailShow.action" jw-field="dqkj" jw-key='{"Muuid":"{{Constant.mUuid}}","Type":"1"}'></jw-list>
+            </ion-slide>
+            <ion-slide>
+                <jw-list jw-template="page/ExpressListTemplateKjgz.html" jw-path="ybpt/web/ybmobile/ReceiverSender_detailShow.action" jw-field="kjgz" jw-key='{"Muuid":"{{Constant.mUuid}}","Type":"0"}'></jw-list>
+            </ion-slide>
+        </ion-slide-box>
+    </tab-slide-box>
+</ion-view>

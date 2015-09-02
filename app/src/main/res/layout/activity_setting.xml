@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/greyDark">
+
+        <com.jinwang.subaomobile.widget.CircleImageView
+            android:id="@+id/civ_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/test_photo"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:clickable="true"
+            android:onClick="showActionSheet"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="王小波"
+            android:textSize="25sp"
+            android:drawableRight="@drawable/icon_enter"
+            android:paddingRight="20dp"
+            android:clickable="true"
+            android:onClick="editInfo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyDark"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/text_about"
+            android:drawableRight="@drawable/icon_enter"
+            android:paddingRight="25dp"
+            android:clickable="true"
+            android:onClick="doAbout"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/greyDeep"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/text_protocol"
+            android:drawableRight="@drawable/icon_enter"
+            android:paddingRight="25dp"
+            android:clickable="true"
+            android:onClick="doProtocol"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/greyDeep"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/text_opinion"
+            android:drawableRight="@drawable/icon_enter"
+            android:paddingRight="25dp"
+            android:clickable="true"
+            android:onClick="doOpinion"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/greyDeep"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/text_modify_pwd"
+            android:drawableRight="@drawable/icon_enter"
+            android:paddingRight="25dp"
+            android:clickable="true"
+            android:onClick="doModifyPwd"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/greyDeep"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

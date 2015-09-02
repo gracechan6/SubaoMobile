@@ -1,0 +1,62 @@
+<ion-view title="ExpressInfo">
+    <ion-content scroll="false">
+        <div class="form_title">
+        <h1>当前环节:<span ng-bind="tacheName"></span></h1>
+        <a ng-click="openHistoryPopover()" ng-show="info.LISTNOTE.length>0"><h3>历史审批</h3></a>
+    </div>
+        <div class="form_list border-image-1px">
+            <jw-item jw-type="text" jw-name="标题" jw-placeholder="请输入标题" jw-bind="title"></jw-item>
+            <jw-file jw-name="收文" jw-type="typeid" jw-year="year" jw-num="serial" jw-year-opt="selYearList"></jw-file>
+            <jw-item jw-type="date" jw-name="收文日期" jw-bind="fileintime"></jw-item>
+            <jw-item jw-name="登记人" jw-bind="registeredUser"></jw-item>
+            <jw-item jw-name="登记日期" jw-bind="registeredTime"></jw-item>
+            <jw-item jw-type="date" jw-name="承办期限" jw-bind="deadline"></jw-item>
+            <jw-item jw-type="select" jw-name="缓急" jw-bind="urgency"></jw-item>
+            <jw-item jw-type="number" jw-name="页数" jw-placeholder="请输入页数" jw-bind="pages"></jw-item>
+            <jw-item jw-type="number" jw-name="份数" jw-placeholder="请输入份数" jw-bind="copies"></jw-item>
+            <jw-file jw-name="来文" jw-type="symbol" jw-year="symbolyear" jw-num="symbolno" jw-year-opt="selYearList" jw-template="../common/page/jw-file-text.html"></jw-file>
+            <jw-item jw-type="text" jw-name="来文机关" jw-placeholder="请输入来文机关" jw-bind="authorities" jw-last></jw-item>
+        </div>
+        <div class="form_title" ng-hide="remarks.valueRel==null && !remarks.isEdit"><h1>备注</h1></div>
+        <div class="form_list border-image-1px" ng-hide="remarks.valueRel==null && !remarks.isEdit">
+            <label>
+                <div ng-show="remarks.isEdit">
+                    <h4><textarea ng-auto-expand jw-padding="10" class="h4_left textarea_filed" placeholder="请输入备注信息" ng-model="remarks.valueRel" ng-focus="startEdit($event)"></textarea></h4>
+                </div>
+                <div class="notice_list" ng-hide="remarks.isEdit">
+                    <pre ng-bind="remarks.valueRel" class="font-color1"></pre>
+                </div>
+            </label>
+        </div>
+        <div class="form_title" ng-show="ideaInfo.flag=='1'"><h1 ng-bind="ideaInfo.name"></h1></div>
+        <div class="form_list border-image-1px" ng-show="ideaInfo.flag=='1'">
+            <label>
+                <div>
+                    <h4><textarea ng-auto-expand class="h4_left textarea_filed" placeholder="请输入意见" ng-model="ideaInfo.content" ng-focus="startEdit($event)"></textarea></h4>
+                </div>
+            </label>
+            <div ng-if="ideaInfo.path != ''" style="overflow:hidden; padding-bottom: 8px">
+                <img style="float: left; width: 80%; margin-left: 4%" src="data:image/png;base64,{{ideaInfo.file}}">
+                <div ng-click="delSignature()" style="float: right; margin-right: 4%"><img src="../img/del_signature.png"></div>
+            </div>
+            <div ng-if="ideaInfo.path == '' && ideaInfo.file != ''" style="overflow:hidden; padding-bottom: 8px">
+                <img style="float: left; width: 80%; margin-left: 4%" src="{{ideaInfo.file}}">
+                <div ng-click="delSignature()" style="float: right; margin-right: 4%"><img src="../img/del_signature.png"></div>
+            </div>
+            <div class="border-bottom-image2">
+                <div class="input_phrase border-right-image" ng-click="openIdeaPopover()">常用短语</div>
+                <signature jw-data="signatureInfo"></signature>
+            </div>
+        </div>
+        <div class="list_bottom"></div>
+    </ion-content>
+    <div id="footButton" class="handle-button" ng-hide="!(buttons.save || buttons.withdramal || buttons.drawback || buttons.urge || buttons.next)">
+        <div class="bottom_button_icon">
+            <div class="bottom_button_icon2" ng-click="gotoSave()" ng-show="buttons.save">保&nbsp;存</div>
+            <div class="bottom_button_icon1" ng-click="openBackPopover()" ng-show="buttons.withdramal">退&nbsp;回</div>
+            <div class="bottom_button_icon1" ng-click="gotoRecovery()" ng-show="buttons.drawback">收&nbsp;回</div>
+            <div class="bottom_button_icon3" ng-click="openUrgePopover()" ng-show="buttons.urge">催&nbsp;办</div>
+        </div>
+        <div class="bottom_button2" ng-click="goNext()" ng-show="buttons.next">下一步</div>
+    </div>
+</ion-view>

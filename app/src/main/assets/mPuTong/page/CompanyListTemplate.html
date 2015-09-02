@@ -1,0 +1,14 @@
+<ion-content delegate-handle="ListScroll">
+    <ion-refresher pulling-text="下拉刷新..." refreshing-icon="ion-loading-c" on-refresh="doRefresh()"></ion-refresher>
+    <div>
+        <ion-list>
+            <ion-item ng-repeat="obj in jsonData['Company'] track by $index">
+                <div class="NE-CompanySelect-List border-bottom-image-WFS" ng-click="jumpTo('ExpressChoose',obj.companyUuid,obj.companyName)">
+                    <div class="NE-CompanySelect-Portrait"><img src="{{Constant.rootUrl + obj.companyLogo}}"  onload="Zoom(this, 40,40)"/></div><!--公司LOGO-->
+                    <div class="NE-CompanySelect-Name" ng-bind="obj.companyName"></div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+    <ion-infinite-scroll ng-if="moreDataCanBeLoaded" icon="ion-loading-c" on-infinite="loadMore(false)" distance="-1%"></ion-infinite-scroll>
+</ion-content>

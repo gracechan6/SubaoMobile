@@ -1,0 +1,42 @@
+<ion-view title="ExpressList">
+    <div class="MP-header">
+        <div class="MP-headerBG1"></div><!--第一层背景色透明-->
+        <div class="MP-headerBG2"></div><!--第二层背景色透明-->
+        <div class="MP-func">
+            <div class="MP-funcScan" ng-click="showInfo('KJCXInfo',1,'')" ><a>快件查询</a></div>
+            <div class="MP-funcPost" ng-click="showInfo('WYJJInfo',1,'')"><a>我要寄件</a></div>
+            <!--<div class="MP-Tap">&lt;!&ndash;页签&ndash;&gt;
+                <ul id="tab1">
+                    <li class="Mp-Tap1" ng-class="{'Mp-Tap-active':show==0}" ng-click="changeTab(0)"><a href="#/tab/dash">待寄快件</a></li>
+                    <li class="Mp-Tap2" ng-class="{'Mp-Tap-active':show==1}" ng-click="changeTab(1)"><a href="#/tab/chats" >待取快件</a></li>
+                    <li class="Mp-Tap3" ng-class="{'Mp-Tap-active':show==2}" ng-click="changeTab(2)"><a href="#/tab/account">快件跟踪</a></li>
+                </ul>
+            </div>-->
+
+        </div>
+    </div>
+
+
+    <tab-slide-box tab="0">
+        <div class="tsb-icons" >
+            <div class="tsb-ic-wrp">
+                <ion-scroll direction="x" class="tsb-hscroll add1">
+                    <a href="javascript:;" class="Mp-TapSlide1">待寄快件</a>
+                    <a href="javascript:;" class="Mp-TapSlide2">待取快件</a>
+                    <a href="javascript:;" class="Mp-TapSlide3">快件跟踪</a>
+                </ion-scroll>
+            </div>
+        </div>
+        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+            <ion-slide>
+                <jw-list jw-template="page/ExpressListTemplateDjkj.html" jw-path="listDjkj.json" jw-field="djkj" jw-key='{"username":"{{Constant.sysUser}}","flag":"djkj"}'></jw-list>
+            </ion-slide>
+            <ion-slide>
+                <jw-list jw-template="page/ExpressListTemplateDqkj.html" jw-path="jwmagic/serviceClient/wgjAjax_listFilein" jw-field="dqkj" jw-key='{"username":"{{Constant.sysUser}}","flag":"dqkj"}'></jw-list>
+            </ion-slide>
+            <ion-slide>
+                <jw-list jw-template="page/ExpressListTemplateKjgz.html" jw-path="jwmagic/serviceClient/wgjAjax_listFilein" jw-field="kjgz" jw-key='{"username":"{{Constant.sysUser}}","flag":"kjgz"}'></jw-list>
+            </ion-slide>
+        </ion-slide-box>
+    </tab-slide-box>
+</ion-view>

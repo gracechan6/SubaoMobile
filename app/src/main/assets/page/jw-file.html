@@ -1,0 +1,39 @@
+<div>
+    <span ng-show="fileType.isEdit || fileYear.isEdit || fileNum.isEdit">
+        <label>
+            <div class="form_main border-bottom-image" ng-class="{'arrow_bg': fileType.isEdit}">
+                <h1 ng-bind-template="{{name}}-文种"></h1>
+                <!--<h2 ng-show="fileType.isEdit"><select class="select_style_blue" ng-model="fileType.valueRel" ng-options="item.UUID as item.NAME for item in fileType.selList" onfocus="objHide('footButton');" onblur="objShow('footButton');"></select></h2>-->
+                <h2 ng-show="fileType.isEdit"><select class="select_style_blue" ng-model="fileType.valueRel" ng-options="item.UUID as item.NAME for item in fileType.selList"></select></h2>
+                <h5 ng-hide="fileType.isEdit"><span ng-bind="fileType.content"></span></h5>
+            </div>
+        </label>
+        <label>
+            <div class="form_main border-bottom-image">
+                <h1 ng-bind-template="{{name}}-年份"></h1>
+                <!--<h2 ng-show="fileYear.isEdit"><select class="select_style_blue" ng-model="fileYear.valueRel" ng-options="item.UUID as item.NAME for item in selYearList" onfocus="objHide('footButton');" onblur="objShow('footButton');"></select></h2>-->
+                <h2 ng-show="fileYear.isEdit"><select class="select_style_blue" ng-model="fileYear.valueRel" ng-options="item.UUID as item.NAME for item in selYearList"></select></h2>
+                <h5 ng-hide="fileYear.isEdit"><span ng-bind="fileYear.content"></span></h5>
+            </div>
+        </label>
+        <label>
+            <div class="form_main" ng-class="{'border-bottom-image': !isLast}">
+                <h1 ng-bind-template="{{name}}-编号"></h1>
+                <h5>
+                    <!--<input type="text" class="input-fild" placeholder="请输入编号" ng-model="fileNum.valueRel" ng-show="fileNum.isEdit" onfocus="objHide('footButton');" onblur="objShow('footButton');">-->
+                    <input type="text" class="input-fild" placeholder="请输入编号" ng-model="fileNum.valueRel" ng-show="fileNum.isEdit">
+                    <span ng-bind="fileNum.valueRel" ng-hide="fileNum.isEdit"></span>
+                </h5>
+            </div>
+        </label>
+    </span>
+    <span ng-hide="fileType.isEdit || fileYear.isEdit || fileNum.isEdit">
+        <label>
+            <div class="form_main" ng-class="{'border-bottom-image': !isLast}">
+                <h1 ng-bind-template="{{name}}文号"></h1>
+                <!--<h5><span ng-bind="fileType.content"></span>〔<span ng-bind="fileYear.valueRel"></span>〕<span ng-bind="fileNum.valueRel"></span>号</h5>-->
+                <h5><span ng-bind-template="{{fileType.content}}〔{{fileYear.valueRel}}〕{{fileNum.valueRel}}号"></span></h5>
+            </div>
+        </label>
+    </span>
+</div>

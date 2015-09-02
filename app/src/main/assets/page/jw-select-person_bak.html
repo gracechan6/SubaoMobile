@@ -1,0 +1,106 @@
+<ion-view title="FileOutSelPerson">
+    <tab-slide-box tab="0">
+        <div class="tsb-icons border-bottom-image">
+            <div class="tsb-ic-wrp">
+                <ion-scroll direction="x" class="tsb-hscroll add1">
+                    <a href="javascript:;" ng-click="allSynchronization(vm2,vm1)">按部门分类</a>
+                    <a href="javascript:;" ng-click="allSynchronization(vm1,vm2)">按角色分类</a>
+                </ion-scroll>
+            </div>
+        </div>
+        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+            <ion-slide>
+                <ion-content>
+                    <div class="border-bottom-image contacts_list_out1">
+                        <div>
+                            <div ng-repeat="one in vm1.countries" ng-class="{closed:vm1.tree.isFolded(one)}">
+                                <div class="form_member_list2 ">
+                                    <input type="checkbox" ng-model="one.checked" class="input1"/>
+                                    <span ng-click="changeCheck(vm1,one)">
+                                        <span class="glyphicon" ng-class="vm1.tree.isFolded(one)?'glyphicon-plus':'glyphicon-minus'"></span>
+                                        <div ng-class="{lable_icon:!one.checked,checked:one.checked,intermediate: vm1.tree.isSemiChecked(one)}"  ng-bind="one.label"></div>
+                                     </span>
+                                </div>
+                                <h3 class=""></h3>
+                                <ul ng-class="{hidden: vm1.tree.isFolded(one)}">
+                                    <li ng-repeat="dept in one.items" ng-class="{closed:vm1.tree.isFolded(dept)}"  class="form_member_list1 float_clear border-top-image">
+                                        <h1>
+                                            <input type="checkbox" class="input1" ng-model="dept.checked"/>
+                                            <span ng-click="changeCheck(vm1,dept)">
+                                                <span class="glyphicon" ng-class="vm1.tree.isFolded(dept)?'glyphicon-plus':'glyphicon-minus'"></span>
+                                                <div ng-class="{lable_icon:!dept.checked,checked:dept.checked,intermediate: vm1.tree.isSemiChecked(dept)}" ng-bind="dept.deptname"></div>
+                                            </span>
+                                        </h1>
+                                        <span ng-bind="dept.items.length + '人'"></span>
+                                        <div ng-class="vm1.tree.isFolded(dept)?'form_member_list1_arrow2':'form_member_list1_arrow1'" ng-click="vm1.tree.toggleFold(dept)"></div>
+                                        <ul ng-class="{hidden: vm1.tree.isFolded(dept)}" class="member_list border-top-image">
+                                            <li ng-repeat="person in dept.items" ng-click="changeCheck(vm1,person)">
+                                                <input type="checkbox" ng-model="person.checked" class="input1"/>
+                                                <div ng-class="{lable_icon:!person.checked,checked:person.checked}">
+                                                    <h1 ng-bind="person.USER_NAME" class="border-left-image-red"></h1>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </ion-content>
+                <div class="handle-button1">
+                    <button class="handle-back" ng-click="vm1.tree.clear()">清除</button>
+                    <div class="handle-forward">
+                        <h1>共选择<span ng-bind="vm1.selcount"></span>人</h1>
+                        <a ng-click="determine(vm1)"><h2>确定</h2></a>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <ion-content>
+                    <div class="border-bottom-image contacts_list_out1">
+                        <div>
+                            <div ng-repeat="two in vm2.countries" ng-class="{closed:vm2.tree.isFolded(two)}">
+                                <div class="form_member_list2 ">
+                                    <input type="checkbox" ng-model="two.checked" class="input1"/>
+                                <span ng-click="changeCheck(vm2,two)">
+                                    <span class="glyphicon" ng-class="vm2.tree.isFolded(two)?'glyphicon-plus':'glyphicon-minus'"></span>
+                                    <div ng-class="{lable_icon:!two.checked,checked:two.checked,intermediate: vm2.tree.isSemiChecked(two)}"  ng-bind="two.label"></div>
+                                </span>
+                                </div>
+                                <h3 class=""></h3>
+                                <ul ng-class="{hidden: vm2.tree.isFolded(two)}" style="overflow:hidden;">
+                                    <li ng-repeat="role in two.items" ng-class="{closed:vm2.tree.isFolded(role)}"  class="form_member_list1 border-top-image">
+                                        <h1>
+                                            <input type="checkbox" class="input1" ng-model="role.checked"/>
+                                            <span ng-click="changeCheck(vm2,role)">
+                                            <span class="glyphicon" ng-class="vm2.tree.isFolded(role)?'glyphicon-plus':'glyphicon-minus'"></span>
+                                            <div ng-class="{lable_icon:!role.checked,checked:role.checked,intermediate: vm2.tree.isSemiChecked(role)}" ng-bind="role.rolename"></div>
+                                        </span>
+                                        </h1>
+                                        <span ng-bind="role.items.length + '人'"></span>
+                                        <div ng-class="vm2.tree.isFolded(role)?'form_member_list1_arrow2':'form_member_list1_arrow1'" ng-click="vm2.tree.toggleFold(role)"></div>
+                                        <ul ng-class="{hidden: vm2.tree.isFolded(role)}" class="member_list border-top-image">
+                                            <li ng-repeat="person in role.items" ng-click="changeCheck(vm2,person)">
+                                                <input type="checkbox" ng-model="person.checked" class="input1"/>
+                                                <div ng-class="{lable_icon:!person.checked,checked:person.checked}">
+                                                    <h1 ng-bind="person.USER_NAME" class="border-left-image-red"></h1>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </ion-content>
+                <div class="handle-button1">
+                    <button class="handle-back" ng-click="vm2.tree.clear()">清除</button>
+                    <div class="handle-forward">
+                        <h1>共选择<span ng-bind="vm2.selcount"></span>人</h1>
+                        <a ng-click="determine(vm2)"><h2>确定</h2></a>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+    </tab-slide-box>
+</ion-view>

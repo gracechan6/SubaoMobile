@@ -1,0 +1,13 @@
+<ion-content delegate-handle="ListScroll">
+    <!--有头部导航需加 class="hasSubBar"-->
+    <ion-refresher pulling-text="下拉刷新..." refreshing-icon="ion-loading-c" on-refresh="doRefresh()"></ion-refresher>
+    <ion-list>
+        <!--<ion-item ng-repeat="obj in jsonData track by $index" ng-click="showInfo('jwInfo',obj.UUID)">-->
+        <ion-item ng-repeat="obj in jsonData track by $index">
+            <!--个性化内容star-->
+            <span ng-bind='obj.UUID'></span>
+            <!--个性化内容end-->
+        </ion-item>
+    </ion-list>
+    <ion-infinite-scroll ng-if="moreDataCanBeLoaded" icon="ion-loading-c" on-infinite="loadMore(false)" distance="1%"></ion-infinite-scroll>
+</ion-content>

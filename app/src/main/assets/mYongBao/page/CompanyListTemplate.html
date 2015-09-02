@@ -1,0 +1,21 @@
+<ion-content delegate-handle="ListScroll">
+    <ion-refresher pulling-text="下拉刷新..." refreshing-icon="ion-loading-c" on-refresh="doRefresh()"></ion-refresher>
+    <div class="border-bottom-image contacts_list_out">
+        <ion-list>
+            <ion-item ng-repeat="obj in jsonData['Company'] track by $index">
+                <div class="form_history" ng-class="{'border-bottom-image': !$last}">
+                    <h1 ng-bind="obj.name"></h1>
+                    <h2 ng-bind="obj.updateTime.substring(0,16)"></h2>
+                    <div class="form_history_info"><pre ng-bind="obj.note"></pre></div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+    <ion-infinite-scroll ng-if="moreDataCanBeLoaded" icon="ion-loading-c" on-infinite="loadMore(false)" distance="10%"></ion-infinite-scroll>
+    <div class="NoMore_notice" ng-if="!moreDataCanBeLoaded && jsonData[uuid].length>0">
+        <h1>没有更多快递公司了</h1>
+    </div>
+    <div class="NoMore_notice2" ng-if="!moreDataCanBeLoaded && !jsonData[uuid].length>0">
+        <h1></h1>
+    </div>
+</ion-content>

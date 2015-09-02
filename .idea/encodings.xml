@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jinwang/subaomobile/activity/CropActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jinwang/subaomobile/activity/LoginActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jinwang/subaomobile/activity/SubaoBaseActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/CropImageView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/cropwindow/CropOverlayView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/cropwindow/edge/Edge.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/cropwindow/edge/EdgePair.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/cropwindow/handle/CenterHandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/cropwindow/handle/CornerHandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/cropwindow/handle/Handle.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/cropwindow/handle/HandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/cropwindow/handle/HorizontalHandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/cropwindow/handle/VerticalHandleHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/util/AspectRatioUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/util/HandleUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/util/ImageViewUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/cropper/util/PaintUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/bg.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/bg_button.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatfrom_bg_focused.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatfrom_bg_normal.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatfrom_bg_pressed.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatto_bg_focused.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatto_bg_normal.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatto_bg_pressed.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/edittext1.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/icon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/icon_attachment_image.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/icon_back.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/icon_enter.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/icon_message.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/icon_settings.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/layout_bg1.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/login.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/mini_avatar_shadow.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tab_icon_contact_normal.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tab_icon_contact_selected.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tab_icon_msg_normal.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tab_icon_msg_selected.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tab_icon_setting_normal.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tab_icon_setting_selected.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/test_photo.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/actionsheet_slt_as_ios7_cancel_bt.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/actionsheet_slt_as_ios7_other_bt_bottom.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/actionsheet_slt_as_ios7_other_bt_middle.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/actionsheet_slt_as_ios7_other_bt_single.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/actionsheet_slt_as_ios7_other_bt_top.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/crop_image_view.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar.xml" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

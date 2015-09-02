@@ -1,0 +1,19 @@
+<ion-view title="historyIdea">
+    <ion-content>
+        <div ng-repeat="obj in ideas track by $index">
+            <div class="form_title"><h1 ng-bind="obj.idea"></h1></div>
+            <div class="form_list1 border-image-1px">
+                <ion-list >
+                    <ion-item ng-repeat="idea in obj.ideas track by $index">
+                        <div class="form_history{{$last?'':' border-bottom-image'}}">
+                            <h1 ng-bind="idea.USER_NAME"></h1>
+                            <h2 ng-bind="idea.UPDATE_TIME.substring(0,16)"></h2>
+                            <div class="form_history_info"><pre ng-bind="idea.NOTE.substring(0,idea.NOTE.indexOf('\n    （'))"></pre></div>
+                            <img ng-if="idea.NOTEFILE" src="{{idea.NOTEFILE}}">
+                        </div>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

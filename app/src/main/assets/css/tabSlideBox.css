@@ -1,0 +1,93 @@
+.tabbed-slidebox .slider {
+    height: 100%;
+}
+.tabbed-slidebox.btm .slider {
+
+}
+.tabbed-slidebox .slider-slides {
+
+}
+
+.tabbed-slidebox .slider-slide {
+
+}
+
+.tabbed-slidebox .tsb-icons {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.tsb-icons{
+    z-index: 100;
+    top: 133px;
+}
+
+.tabbed-slidebox .tsb-ic-wrp {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.tabbed-slidebox .tsb-icons a {
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 1.4em;
+    color: #8e91a2;
+}
+
+.tabbed-slidebox .tsb-icons a.active {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    color: #312e36;
+}
+
+.tabbed-slidebox .tabbed-slidebox {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.tsb-hscroll.scroll-view{
+  	white-space: nowrap;
+	margin:0 auto;
+}
+.tsb-hscroll.scroll-view .scroll-bar{
+	visibility:hidden;
+}
+.tsb-hscroll.scroll-view .scroll.onscroll{
+	-webkit-transition: -webkit-transform 0.3s; /* For Safari 3.1 to 6.0 */
+}
+
+.tabbed-slidebox .tsb-icons .scroll a{
+}
+
+
+.add1{
+    border: 1px solid #665f62;
+    border-radius: 5px;
+    height: 31px;
+}
+.Mp-TapSlide1{
+    position: absolute;
+    left: 0%;
+    width: 33%;
+    /*border-right: 1px solid #665f62;*/
+    border-radius: 4px 0 0 4px;
+}
+.Mp-TapSlide2{
+    position: absolute;
+    float: left;
+    left: 33%;
+    width: 34.4%;
+    z-index: 8;
+    border-right: 1px solid #665f62;
+    border-left: 1px solid #665f62;
+}
+.Mp-TapSlide3{
+    position: absolute;
+    right: 0%;
+    width: 33%;
+    /*border-left: 1px solid #665f62;*/
+    border-radius: 0 4px 4px 0;
+}

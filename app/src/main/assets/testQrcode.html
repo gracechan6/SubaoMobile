@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <script src="lib/qrcodejs/qrcode.js"></script>
+    <script>
+        function init() {
+            qrcode = new QRCode("qrcode", {
+                //width: 282,
+                //height: 282,
+                //colorDark : "#000000",
+                //colorLight : "#ffffff",
+                //容错率：L-7%；M-15%；Q-25%；H-30%
+                //correctLevel : QRCode.CorrectLevel.L,
+                //correctLevel : QRCode.CorrectLevel.M,
+                //correctLevel : QRCode.CorrectLevel.Q,
+                //correctLevel : QRCode.CorrectLevel.H,
+                text: "宁波金网信息产业有限公司"
+            });
+        }
+        function makeCode () {
+            var elText = document.getElementById("text");
+            if (!elText.value) {
+                alert("请输入内容！");
+                elText.focus();
+                return;
+            }
+            qrcode.makeCode(elText.value);
+        }
+    </script>
+</head>
+<body onload="init();">
+<input id="text" type="text" value="" style="width:80%">
+<br>
+<button onclick="makeCode();">aaaa</button><button onclick="qrcode.clear();">bbbb</button>
+<br>
+<div id="qrcode"></div>
+</body>
+</html>

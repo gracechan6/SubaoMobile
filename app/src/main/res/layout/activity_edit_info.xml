@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <include layout="@layout/layout_toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/greyDark"
+        android:clickable="true"
+        android:onClick="showActionSheet"
+        android:orientation="horizontal">
+
+        <com.jinwang.subaomobile.widget.CircleImageView
+            android:id="@+id/civ_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/test_photo"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="设置头像"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/icon_enter"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/greyDark"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@color/greyDark">
+
+            <TextView
+                style="@style/textView_style"
+                android:text="@string/text_nickname"
+                />
+            <TextView
+                android:id="@+id/tvNickName"
+                style="@style/textView_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text=""/>
+            <View
+                style="@style/underLine_textview"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@color/greyDark">
+
+            <TextView
+                style="@style/textView_style"
+                android:text="@string/text_yongbaoid"
+                />
+            <TextView
+                android:id="@+id/tvYongBaoId"
+                style="@style/textView_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text=""/>
+            <View
+                style="@style/underLine_textview"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@color/greyDark">
+
+            <TextView
+                style="@style/textView_style"
+                android:text="@string/text_tel"/>
+            <TextView
+                android:id="@+id/tvTel"
+                style="@style/textView_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text=""/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <TextView
+        style="@style/textView_style"
+        android:text="@string/text_qrcode"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+    <!--<ImageView
+        android:id="@+id/imv_qrcode1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/test_photo"
+        android:background="@color/greyDark"
+        android:padding="5dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyDark"
+        android:padding="5dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imv_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/text_logout"
+        />
+
+
+
+
+</LinearLayout>

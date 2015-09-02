@@ -1,0 +1,29 @@
+<ion-view title="backPage">
+    <ion-content>
+        <div class="form_list1 border-bottom-image">
+            <label>
+                <div class="form_main border-bottom-image arrow_bg">
+                    <h1>退回环节</h1>
+                    <h3>
+                        <select class="select_style_blue" ng-model="backInfo.backSelected" ng-options="obj.TACHE_NAME for obj in backInfo.LIST">
+                            <option value="">-- 请选择 --</option>
+                        </select>
+                    </h3>
+                </div>
+            </label>
+            <label>
+                <div class="form_main "><h1>退办意见</h1>
+                    <h2>
+                        <textarea ng-auto-expand class="textarea_filed" placeholder="请输入意见" ng-model="backInfo.withdramalopinion" ng-focus="startEdit($event)"></textarea>
+                    </h2>
+                </div>
+            </label>
+        </div>
+    </ion-content>
+    <div class="handle-button">
+        <button class="handle-back" ng-click="closeBackPopover()">取消</button>
+        <div class="handle-forward" ng-click="gotoBack()">
+            <h2>确定</h2>
+        </div>
+    </div>
+</ion-view>

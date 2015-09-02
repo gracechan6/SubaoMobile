@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mPuTong/js/ChangeSender.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mPuTong/js/DjInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mPuTong/js/DqInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mPuTong/js/JJ.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mPuTong/js/JjInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mPuTong/js/QrCode.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mPuTong/js/SelAdd.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mPuTong/js/SelHistory.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mPuTong/page/ExpressList.html" charset="UTF-8" />
+  </component>
+</project>

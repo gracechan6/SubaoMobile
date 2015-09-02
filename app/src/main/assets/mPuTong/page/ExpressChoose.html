@@ -1,0 +1,67 @@
+<ion-view title="ExpressChoose" class="content-background-gray">
+    <ion-content>
+        <label ng-click="jumpTo('ChangeSender','changeSender')">
+            <div class="NE-ExpressEdit-BG border-bottom-image-WFS">
+                <div class="icomoon-NE-ExpressEdit-Sender">寄件人信息</div>
+                <div class="NE-ExpressEdit-EditButton">修改信息</div>
+                <div class="NE-ExpressEdit-SenderName" ng-bind="express.sendPeople"></div><!---寄件人姓名--->
+                <div class="NE-ExpressEdit-SenderPhone" ng-bind="express.sendPhone"></div><!---寄件人电话--->
+                <div class="NE-ExpressEdit-SenderAdd" ng-bind="express.sendAddress"></div><!---寄件人地址--->
+            </div>
+        </label>
+        <div class="NE-ExpressEdit-BG border-image-1px-WFS">
+            <label ng-click="jumpTo('SelHistory','selHistory')">
+                <div class="icomoon-NE-ExpressEdit-Recipients">收件人信息</div>
+                <div class="NE-ExpressEdit-EditButton">历史信息</div>
+            </label>
+
+            <label ng-click="jumpTo('SelAdd','pickup')">
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-Recipients-Info">收货地址</div>
+                    <div class="NE-ExpressEdit-Recipients-Add" ng-class="{'NE-ExpressEdit-Recipients-Add':express.pickupAddress == '请编辑收件地址', 'NE-ExpressEdit-Recipients-Add1':express.pickupAddress != '请编辑收件地址'}" ng-bind="express.pickupAddress"></div>
+                    <div class="icomoon-NE-ExpressEdit-Recipients-Arrow">&#xe604;</div>
+                </div>
+            </label>
+            <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+            <label>
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-Recipients-Info">收件人</div>
+                    <input class="NE-ExpressEdit-Input" placeholder="请编辑收件人" ng-model="express.pickupPeople">
+                </div>
+            </label>
+            <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+            <label>
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-Recipients-Info">联系电话</div>
+                    <input class="NE-ExpressEdit-Input" placeholder="请编辑联系电话" ng-model="express.pickupPhone">
+                </div>
+            </label>
+        </div>
+        <div class="NE-ExpressEdit-BG border-image-1px-WFS">
+            <label>
+                <div class="NE-ExpressEdit-Recipients-Edit">
+                    <div class="NE-ExpressEdit-Recipients-Info">快件重量</div>
+                    <div class="NE-ExpressEdit-Recipients-Add">
+                        <select class="NE-ExpressEdit-Weight" ng-model="express.selected" ng-options="item.Weight for item in express.selOptions"></select>
+                    </div>
+                    <div class="icomoon-NE-ExpressEdit-Recipients-Arrow">&#xe604;</div>
+                </div>
+            </label>
+            <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+            <div class="NE-ExpressEdit-Recipients-Edit">
+                <div class="NE-ExpressEdit-Recipients-Info">总价</div>
+                <div class="NE-ExpressEdit-Price">¥ <span ng-bind="express.selected.Value"></span></div>
+            </div>
+        </div>
+        <div class="NE-ExpressEdit-IntroTitle">选择支付方式</div>
+        <div class="NE-ExpressEdit-BG border-image-1px-WFS list">
+            <div class="NE-ExpressEdit-Recipients-Edit item item-checkbox">
+                <div class="NE-ExpressEdit-PaymentSupport-Alipay">支付宝</div>
+                <label class="checkbox">
+                    <input type="checkbox" class="NE-ExpressCheckbox" checked>
+                </label>
+            </div>
+        </div>
+        <div class="NE-ExpressEdit-Payment" ng-click="gotoSave()">确认支付</div>
+    </ion-content>
+</ion-view>

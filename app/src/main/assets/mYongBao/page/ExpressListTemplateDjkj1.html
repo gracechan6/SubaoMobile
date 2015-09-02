@@ -1,0 +1,21 @@
+<ion-content delegate-handle="ListScroll">
+    <ion-refresher pulling-text="下拉刷新..." refreshing-icon="ion-loading-c" on-refresh="doRefresh()"></ion-refresher>
+    <div class="border-bottom-image contacts_list_out">
+        <ion-list>
+            <ion-item ng-repeat="obj in jsonData.djkj track by $index" ng-click="showInfo('FileInInfo',obj.UUID,obj.FLAG)">
+                <div class="contacts_list1" ng-class="{'border-bottom-image': !$last}">
+                    <div class="list_source"><span ng-bind='obj.sjr'></span>〔<span ng-bind='obj.jjcs'></span>〕<span ng-bind='obj.sjcs'></span>号</div>
+                    <div class="list_time"><span ng-bind='obj.kdgs'></span></div>
+                    <div class="list_title"><span ng-bind='obj.sjdz'></span></div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+    <ion-infinite-scroll ng-if="moreDataCanBeLoaded" icon="ion-loading-c" on-infinite="loadMore(false)" distance="1%"></ion-infinite-scroll>
+    <div class="NoMore_notice" ng-if="!moreDataCanBeLoaded && jsonData.djkj.length>0">
+        <h1>没有更多文件了</h1>
+    </div>
+    <div class="NoMore_notice2" ng-if="!moreDataCanBeLoaded && !jsonData.djkj.length>0">
+        <h1></h1>
+    </div>
+</ion-content>

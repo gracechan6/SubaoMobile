@@ -1,0 +1,281 @@
+
+/*---------------------------------快递公司列表 NE-CompanySelect----------------------------------------*/
+
+.NE-CompanySelect-List{
+    margin: 0 0 0 5%;
+    padding: 10px 0;
+    width: 95%;
+    overflow: hidden;
+}
+.NE-CompanySelect-List a{
+    display: block;
+    overflow: hidden;
+}
+.NE-CompanySelect-Portrait{
+    width: 40px;
+    height: 40px;
+    background: url("../img/company-portrait-transprant.png") center no-repeat;
+    background-size: 40px;
+    border-radius: 50px;
+    float: left;
+}
+.NE-CompanySelect-Name {
+    float: left;
+    margin-left: 12px;
+    line-height: 40px;
+    font-size: 1.6em;
+    color: #363636;
+}
+
+/*---------------------------------寄件填写页面  NE-ExpressEdit -----------------------------------------*/
+
+.NE-ExpressEdit-BG{
+    padding: 0px 15px;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.icomoon-NE-ExpressEdit-Sender,.icomoon-NE-ExpressEdit-Recipients{
+    font-size: 1.6em;
+    color: #1c1c1c;
+    float: left;
+    margin-top: 13px;
+}
+.icomoon-NE-ExpressEdit-Sender:before{
+    float: left;
+    content: "\e608";
+    font-size: 11px;
+    color: #37aafc;
+    text-align: center;
+    line-height: 1.6em;
+    margin-right: 4px;
+    margin-top: 3px;
+}
+.icomoon-NE-ExpressEdit-Recipients:before{
+    float: left;
+    content: "\e608";
+    font-size: 11px;
+    color: #eb6100;
+    text-align: center;
+    line-height: 1.6em;
+    margin-right: 4px;
+    margin-top: 3px;
+}
+
+.NE-ExpressEdit-EditButton{
+    float: right;
+    color: #37aafc;
+    padding: 2px 4px;
+    border: 1px solid #37aafc;
+    border-radius: 2px;
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.NE-ExpressEdit-SenderName{
+    clear: both;
+    font-size: 1.8em;
+    color: #37aafc;
+    line-height: 1.9em;
+}
+.NE-ExpressEdit-SenderPhone{
+    font-size: 1.4em;
+    color: #666666;
+}
+.NE-ExpressEdit-SenderAdd{
+    font-size: 1.3em;
+    color: #676767;
+    margin-top: 2px;
+    margin-bottom: 13px;
+}
+
+.NE-ExpressEdit-Recipients-Edit{
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+    padding: 12px 0;
+}
+.NE-ExpressEdit-Recipients-Info{
+    font-size: 1.6em;
+    color: #516b7a;
+    width: 24%;
+    float: left;
+}
+.NE-ExpressEdit-Recipients-Add{
+    float: left;
+    width: 67%;
+    margin-left: 3%;
+    font-size: 1.6em;
+    color: #a1a1a1;
+}
+.NE-ExpressEdit-Recipients-Add1{
+    float: left;
+    width: 67%;
+    margin-left: 3%;
+    font-size: 1.6em;
+    color: #2d2d2d;
+}
+.NE-ExpressEdit-Recipients-Add a{
+    display: block;
+    overflow: hidden;
+    color: #a1a1a1;
+}
+.icomoon-NE-ExpressEdit-Recipients-Arrow{
+    font-size: 16px;
+    color: #d5d5d9;
+    width: 5%;
+    float: right;
+}
+.NE-Express-Divider{
+    width: 104%;
+    float: right;
+    clear: both;
+    position: relative;
+    right: -12px;
+    margin: 0;
+}
+.NE-ExpressEdit-Input{
+    width: 65%;
+    float: left;
+    font-size: 1.6em;
+    border: none;
+    margin:  0 0 0 3%;
+    padding: 0;
+    color: #2d2d2d;
+}
+.NE-ExpressEdit-Weight{
+    float: right;
+    border: none;
+    font-size: 1em;
+    height: 16px;
+    outline: none;
+}
+.NE-ExpressEdit-Price{
+    font-size: 1.8em;
+    color: #eb6100;
+    float: right;
+    margin-right:8%;
+}
+
+.NE-ExpressEdit-Payment{
+    width: 96%;
+    margin: 0 auto;
+    font-size: 1.8em;
+    color: #fff;
+    background: #00a0e9;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.NE-ExpressEdit-IntroTitle{
+    font-size: 1.4em;
+    margin: -3px 0 4px 5%;
+    color: #6d6d72;
+}
+.NE-ExpressEdit-PaymentSupport-Alipay{
+    font-size: 1.6em;
+    float: left;
+    color: #516b7a;
+    line-height: 25px;
+
+}
+.NE-ExpressEdit-PaymentSupport-Alipay:before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url("../img/PaymentSupport-Alipay.png") center no-repeat;
+    background-size: 25px;
+    display: block;
+    float: left;
+    margin-right: 6px;
+}
+.NE-ExpressEdit-Select{
+    float: right;
+}
+.NE-ExpressCheckbox{
+    float: right;
+}
+/*---------------checkbox----------------------*/
+.check-icon {
+    width: 25px;
+    height: 25px;
+    background: url("../img/checkbox.png") center no-repeat;
+    background-size:20px;
+    display:block;
+}
+
+.NE-ExpressEdit-Select input {
+    position: absolute;
+    visibility:hidden;
+}
+.checked {
+    background:  url("../img/checked.png") center no-repeat;
+    background-size:20px;
+}
+
+
+/*---------------寄件人信息编辑(NE-ExpressEdit-Sender)----------------------*/
+.NE-ExpressEdit-Sender-BG{
+    background: #fff;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.NE-ExpressEdit-Sender-Li{
+    width: 100%;
+    padding: 12px 0;
+    overflow: hidden;
+}
+
+.NE-ExpressEdit-Sender-intro{
+    float: left;
+    font-size: 1.6em;
+    color: #516b7a;
+    width: 24%;
+}
+.NE-ExpressEdit-Sender-Add{
+    width: 67%;
+    float: left;
+    font-size: 1.5em;
+    margin-left: 3%;
+}
+.NE-ExpressEdit-Sender-Input{
+    width: 65%;
+    float: left;
+    font-size: 1.6em;
+    border: none;
+    margin:  0 0 0 3%;
+    padding: 0;
+    color: #2d2d2d;
+}
+/*---------------历史收件人信息(NE-ExpressEdit-RCAdd)----------------------*/
+.NE-ExpressEdit-RCAdd-BG{
+    background: #fff;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.NE-ExpressEdit-RCAdd-Li{
+    width: 100%;
+    padding: 12px 0;
+    overflow: hidden;
+}
+.NE-ExpressEdit-RCAdd-Name{
+    float: left;
+    font-size: 1.6em;
+    color: #37aafc;
+}
+.NE-ExpressEdit-RCAdd-Number{
+    float: right;
+    color: #666666;
+    font-size: 1.6em;
+}
+.NE-ExpressEdit-RCAdd-Add{
+    font-size: 1.4em;
+    clear: both;
+    color: #676767;
+    padding-top: 8px;
+}

@@ -1,0 +1,27 @@
+<ion-view title="changeSendPeopleMessage" class="content-background-gray">
+    <ion-content>
+        <div class="NE-ExpressEdit-Sender-BG border-bottom-image-WFS">
+            <ion-item ng-click="jumpTo('SelAdd','send')">
+                <div class="NE-ExpressEdit-Sender-Li">
+                    <div class="NE-ExpressEdit-Sender-intro">寄件地址</div>
+                    <div class="NE-ExpressEdit-Sender-Add" ng-bind="express.sendAddress"></div>
+                    <div class="icomoon-NE-ExpressEdit-Recipients-Arrow">&#xe604;</div>
+                </div>
+            </ion-item>
+            <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+            <label>
+                <div class="NE-ExpressEdit-Sender-Li">
+                    <div class="NE-ExpressEdit-Sender-intro">姓名</div>
+                    <input class="NE-ExpressEdit-Sender-Input"  placeholder="请编辑姓名" ng-model="express.sendPeople">
+                </div>
+            </label>
+            <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+            <label>
+                <div class="NE-ExpressEdit-Sender-Li">
+                    <div class="NE-ExpressEdit-Sender-intro">联系电话</div>
+                    <input class="NE-ExpressEdit-Sender-Input"  placeholder="请输入联系电话" ng-model="express.sendPhone">
+                </div>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>

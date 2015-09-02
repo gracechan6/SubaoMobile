@@ -1,0 +1,28 @@
+<ion-view title="fileList">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-if="info.LISTFILEZSNTKO" ng-click="openFile(info.LISTFILEZSNTKO[0].FILE_SVAE_NAME,info.LISTFILEZSNTKO[0].FILE_NAME)">
+                <div class="Notice_list" ng-class="{'border-bottom-image': info.LISTFILE.length>0}">
+                    <h5 ng-bind="info.LISTFILEZSNTKO[0].FILE_NAME"></h5>
+                </div>
+            </ion-item>
+            <ion-item ng-repeat="obj in info.LISTFILE track by $index" ng-click="openFile(obj.FILE_SVAE_NAME,obj.FILE_NAME)">
+                <div class="attachment-main border-image-1px" ng-class="{'border-bottom-image': !$last}">
+                    <div class="attachmentList_list">
+                        <div class="attachmentList_icon"
+                             ng-class="{
+                             attachment_icon_img:selImg('img',obj.FILE_NAME),
+                             attachment_icon_ppt:selImg('ppt',obj.FILE_NAME),
+                             attachment_icon_doc:selImg('doc',obj.FILE_NAME),
+                             attachment_icon_excel:selImg('excel',obj.FILE_NAME),
+                             attachment_icon_pdf:selImg('pdf',obj.FILE_NAME),
+                             attachment_icon_word:selImg('word',obj.FILE_NAME)
+                             }">
+                        </div>
+                        <div class="attachmentList_title" ng-bind="obj.FILE_NAME"></div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

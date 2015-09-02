@@ -1,0 +1,35 @@
+<ion-view title="selectAddress" class="content-background-gray">
+    <ion-content>
+        <ion-item>
+            <div class="NE-ExpressEdit-Sender-BG border-bottom-image-WFS">
+                <label>
+                    <div class="NE-ExpressEdit-Sender-Li">
+                        <div class="NE-ExpressEdit-Sender-intro">省</div>
+                        <select class="NE-ExpressEdit-Sender-Input" ng-model="addressInfo.Sheng" ng-options="itemS.name as itemS.name for itemS in addressInfo1.cityJson" ng-change="changeSheng()"></select>
+                    </div>
+                </label>
+                <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+                <label>
+                    <div class="NE-ExpressEdit-Sender-Li">
+                        <div class="NE-ExpressEdit-Sender-intro">市</div>
+                        <select class="NE-ExpressEdit-Sender-Input" ng-model="addressInfo.Shi" ng-options="itemSh.name as itemSh.name for itemSh in addressInfo1.cityJsonSub" ng-change="changeShi()"></select>
+                    </div>
+                </label>
+                <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+                <label>
+                    <div class="NE-ExpressEdit-Sender-Li">
+                        <div class="NE-ExpressEdit-Sender-intro">区</div>
+                        <select class="NE-ExpressEdit-Sender-Input" ng-model="addressInfo.Qu" ng-options="itemQ.name as itemQ.name for itemQ in addressInfo1.cityJsonSubSub"></select>
+                    </div>
+                </label>
+                <div class="NE-Express-Divider border-bottom-image-WFS"></div><!---分割线--->
+                <label>
+                    <div class="NE-ExpressEdit-Sender-Li">
+                        <div class="NE-ExpressEdit-Sender-intro">详细地址</div>
+                        <input class="NE-ExpressEdit-Sender-Input"  placeholder="已选择的省市区无需输入" ng-model="addressInfo.other">
+                    </div>
+                </label>
+            </div>
+        </ion-item>
+    </ion-content>
+</ion-view>

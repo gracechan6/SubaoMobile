@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/greyDark"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="@string/text_val_send"/>
+
+            <TextView
+                android:id="@+id/tvTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/blueSky"
+                android:textSize="20sp"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/enter_val_pl"
+            android:background="@drawable/layout_edt_bkgrey"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:textSize="25dp"
+            android:textColorHint="@color/greyDark"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtNewPwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:hint="@string/enter_new_pwd"
+        android:background="@color/greyDark"
+        android:textSize="25dp"
+        android:singleLine="true"
+        android:inputType="textPassword"/>
+    <View style="@style/underLine_textview"
+        android:layout_margin="0dp"/>
+    <EditText
+        android:id="@+id/edtConfirmPwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="@string/enter_confirm_pwd_pl"
+        android:background="@color/greyDark"
+        android:textSize="25dp"
+        android:singleLine="true"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/text_confirm"
+        android:clickable="true"
+        android:onClick="doConfirm"/>
+
+</LinearLayout>

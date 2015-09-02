@@ -1,0 +1,29 @@
+<ion-view title="urgePage">
+    <ion-content>
+        <div class="border-bottom-image  contacts_list_out1 member_list_out">
+            <div class="form_member_list1">
+                <label><h1 style="font-size: 2em; float:  left; width: 40%;">
+                    <input type="checkbox" class="input1" ng-model="info.allUrge" ng-change="AllUrge()">
+                    <div ng-class="{lable_icon:!info.allUrge,checked:info.allUrge}" class="lable_icon_title" style="line-height: 45px">未处理人员</div>
+                </h1></label>
+                <span ng-bind="urgeInfo.length+'人'"></span>
+                <ul class="member_list border-top-image">
+                    <label class="member_list li" ng-repeat="obj in urgeInfo track by $index">
+                        <li>
+                            <input type="checkbox" class="input1" ng-model="obj.checked">
+                            <div ng-class="{lable_icon:!obj.checked,checked:obj.checked}">
+                                <h1 style="font-size:1em" class="border-left-image-red " ng-bind="obj.USERNAME"></h1>
+                            </div>
+                        </li>
+                    </label>
+                </ul>
+            </div>
+        </div>
+    </ion-content>
+    <div class="handle-button">
+        <button class="handle-back" ng-click="closeUrgePopover()">取消</button>
+        <div class="handle-forward" ng-click="gotoUrge()">
+            <h2>确定</h2>
+        </div>
+    </div>
+</ion-view>
